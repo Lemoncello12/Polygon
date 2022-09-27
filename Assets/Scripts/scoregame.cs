@@ -1,0 +1,114 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
+
+public class scoregame : MonoBehaviour
+{
+    public float speed = 4.5f;
+    private Rigidbody rb;
+
+    public float jumpForce = 9;
+
+    public bool cubeIsOnTheGround = true;
+
+    public TextMeshProUGUI ScoreText;
+    public int score;
+    public int scoreToWin = 4;
+    int sceneNum = 8;
+
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        PlayerMove();
+
+        if (score >= scoreToWin)
+        {
+            YouWin();
+
+        }
+
+
+    }
+
+
+    void YouWin()
+    {
+        ScoreText.text = "You Win";
+        //Time.timeScale = 0f;
+        if (SceneManager.GetActiveScene().buildIndex == sceneNum)
+        {
+            SceneManager.LoadScene(0);
+        } 
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+        
+
+    }
+
+
+    void PlayerMove()
+
+    {
+        float leftRight = Input.GetAxis("Horizontal");
+        float forwardBack = Input.GetAxis("Vertical");
+        //Vector3 movePlayer = transform.position;
+        //movePlayer.x = movePlayer.x + leftRight * speed * 10 * Time.deltaTime;
+        //movePlayer.z = movePlayer.z + forwardBack * speed * 10 * Time.deltaTime;
+        Vector3 movePlayer = new Vector3(leftRight, 0, forwardBack) * speed * Time.deltaTime;
+        transform.Translate(movePlayer, Space.Self);
+        //rb.MovePosition(movePlayer);
+        if (Input.GetButtonDown("Jump") && cubeIsOnTheGround)
+        {
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            cubeIsOnTheGround = false;
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        //Debug.Log("Entered");
+        if (collision.gameObject.tag == ("Ground"))
+        {
+            cubeIsOnTheGround = true;
+        }
+    }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Pickup"))
+        {
+            other.gameObject.SetActive(false);
+            AddScore();
+        }
+        else if (other.gameObject.CompareTag("Secret"))
+        {
+            other.gameObject.SetActive(false);
+        }
+
+    }
+
+
+    void AddScore()
+    {
+        score++;
+        ScoreText.text = score.ToString();
+    }
+
+
+
+
+}
