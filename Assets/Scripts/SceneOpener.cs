@@ -21,8 +21,4 @@ public class SceneOpener : MonoBehaviour
     {
         SceneManager.LoadScene(sceneNum);
     }
-    public void QuitGame()
-    {
-        Application.Quit();
-    }
 }
