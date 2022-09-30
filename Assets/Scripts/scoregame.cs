@@ -30,6 +30,10 @@ public class scoregame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+        }
         PlayerMove();
 
         if (score >= scoreToWin)
