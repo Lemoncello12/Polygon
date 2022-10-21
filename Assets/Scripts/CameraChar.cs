@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraChar : MonoBehaviour
 {
-    public float mouseLook = 100f;
+    public float sensitivity = 100f;
     public Transform Target, Player;
     float mouseX, mouseY;
 
@@ -25,8 +25,8 @@ public class CameraChar : MonoBehaviour
         //float mouseX = Input.GetAxis("Mouse X") * mouseLook * Time.deltaTime;
         //ourPlayer.Rotate(Vector3.up * mouseX);
 
-        mouseX += Input.GetAxis("Mouse X") * mouseLook;
-        mouseY -= Input.GetAxis("Mouse Y") * mouseLook;
+        mouseX += Input.GetAxis("Mouse X") * sensitivity;
+        mouseY -= Input.GetAxis("Mouse Y") * sensitivity;
         //mouseY = Mathf.Clamp(mouseY, -35, 60);
         mouseY = Mathf.Clamp(mouseY, -90, 60);
 
