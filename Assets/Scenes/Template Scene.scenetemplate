@@ -65,16 +65,16 @@ MonoBehaviour:
   preview: {fileID: -485389918546450993}
   dependencies:
   - dependency: {fileID: 2100000, guid: da00f2dfc6506c346ac48fa0c5beda76, type: 2}
-    instantiationMode: 0
+    instantiationMode: 1
   - dependency: {fileID: 1109834665330909175, guid: c3fef0fcb432ca54192eb84180eec0df,
       type: 3}
-    instantiationMode: 0
+    instantiationMode: 1
   - dependency: {fileID: 8300000, guid: dbbe38c446be652468a19980e1453085, type: 3}
     instantiationMode: 1
   - dependency: {fileID: 2800000, guid: ee148e281f3c41c5b4ff5f8a5afe5a6c, type: 3}
-    instantiationMode: 0
+    instantiationMode: 1
   - dependency: {fileID: 2800000, guid: 2fd6421f253b4ef1a19526541f9ffc0c, type: 3}
-    instantiationMode: 0
+    instantiationMode: 1
   - dependency: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
     instantiationMode: 1
   - dependency: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

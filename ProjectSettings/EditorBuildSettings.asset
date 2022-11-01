@@ -6,30 +6,30 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Main Menu/Main Menu V4.unity
+    path: Assets/Scenes/Main Menu.unity
     guid: 708f0fab50bf62d438e4c0f1eedec99f
   - enabled: 1
-    path: Assets/Scenes/Monument/Monument V24.unity
+    path: Assets/Scenes/Monument.unity
     guid: 1e52a49f21e065045a51e13579b13243
   - enabled: 1
-    path: Assets/Scenes/Abstract/Abstract V23.unity
+    path: Assets/Scenes/Abstract.unity
     guid: fa761ad11e2172044a51963ffb0c5bb2
   - enabled: 1
-    path: Assets/Scenes/Lake/Lake V22.unity
+    path: Assets/Scenes/Lake.unity
     guid: 5b663cc20619e6c419168e5b1eead87c
   - enabled: 1
-    path: Assets/Scenes/Cunning Cube's Domain/Cunning Cube's Domain V11.unity
+    path: Assets/Scenes/Cunning Cube's Domain.unity
     guid: 3d89168bc3a8a4b429878805b3b1aac6
   - enabled: 1
-    path: Assets/Scenes/Overflow/Overflow V13.unity
+    path: Assets/Scenes/Overflow.unity
     guid: c35c54b65d5bf0c4d8cb30f34ac6c262
   - enabled: 1
-    path: Assets/Scenes/Tram/Tram V3.unity
+    path: Assets/Scenes/Tram.unity
     guid: 2fc7350c95781fb42b87d602d7065980
   - enabled: 1
-    path: Assets/Scenes/Abstract-er/Abstract-er V1.unity
+    path: Assets/Scenes/Abstract-er.unity
     guid: 2329499041b0bb645b25e774e9a3c619
   - enabled: 1
-    path: Assets/Scenes/Cylindrical Suffering/Cylindrical Suffering V3.unity
+    path: Assets/Scenes/Cylindrical Suffering.unity
     guid: d718ae618dae97d4c8fde16fe311890b
   m_configObjects: {}
