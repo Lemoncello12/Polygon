@@ -6,6 +6,7 @@ public class Autodoor : MonoBehaviour
 {
     public Vector3 endPos;
     public float speed = 1.0f;
+    public float doorDelay = 1.5f;
     private bool moving = false;
     private bool opening = true;
     private Vector3 startPos;
@@ -45,7 +46,7 @@ public class Autodoor : MonoBehaviour
             if (opening)
             {
                 delay += Time.deltaTime;
-                if (delay > 1.5f)
+                if (delay > doorDelay)
                 {
                     opening = false;
                 }
