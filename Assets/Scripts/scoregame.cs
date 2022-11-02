@@ -105,6 +105,17 @@ public class scoregame : MonoBehaviour
 
     }
 
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.tag == "Door")
+        {
+            if(other.GetComponent<Autodoor>().Moving == false)
+            {
+                other.GetComponent<Autodoor>().Moving = true;
+            }
+        }
+    }
+
 
     void AddScore()
     {
