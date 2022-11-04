@@ -16,6 +16,7 @@ public class Autodoor : MonoBehaviour
     void Start()
     {
         startPos = transform.position;
+        endPos += startPos;
     }
 
     // Update is called once per frame
