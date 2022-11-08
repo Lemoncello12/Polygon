@@ -775,6 +775,11 @@ PrefabInstance:
       propertyPath: ScoreText
       value: 
       objectReference: {fileID: 849977610}
+    - target: {fileID: 1109834665330909172, guid: c3fef0fcb432ca54192eb84180eec0df,
+        type: 3}
+      propertyPath: Manager
+      value: 
+      objectReference: {fileID: 1177646319}
     - target: {fileID: 1109834665330909175, guid: c3fef0fcb432ca54192eb84180eec0df,
         type: 3}
       propertyPath: m_Name
