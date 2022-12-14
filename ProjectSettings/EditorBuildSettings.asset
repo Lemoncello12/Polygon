@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Train.unity
     guid: d09a2611fc95adc4099ae7579054a91f
+  - enabled: 1
+    path: Assets/Scenes/Jump.unity
+    guid: 9d3cc8e77b90bda4fa3eb6ba361c874d
   m_configObjects: {}
