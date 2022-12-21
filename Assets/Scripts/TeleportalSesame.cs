@@ -34,7 +34,7 @@ public class TeleportalSesame : MonoBehaviour
             goTo = goTo1;
         }
 
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("StorageCube"))
         {
             other.gameObject.transform.position = goTo;
         }
@@ -43,6 +43,22 @@ public class TeleportalSesame : MonoBehaviour
     public void toggle()
     {
         goTo1or2 = !goTo1or2;
+
+        teleported1.SetActive(!goTo1or2);
+        teleported2.SetActive(goTo1or2);
+    }
+
+    public void pushStart()
+    {
+        goTo1or2 = true;
+
+        teleported1.SetActive(!goTo1or2);
+        teleported2.SetActive(goTo1or2);
+    }
+
+    public void pushExit()
+    {
+        goTo1or2 = false;
 
         teleported1.SetActive(!goTo1or2);
         teleported2.SetActive(goTo1or2);

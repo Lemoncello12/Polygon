@@ -9,6 +9,8 @@ TagManager:
   - Boss
   - Secret
   - Door
+  - Abyss
+  - StorageCube
   layers:
   - Default
   - TransparentFX
