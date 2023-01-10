@@ -13,7 +13,6 @@ public class CubeReceptacle : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        Debug.Log("Triggered");
         if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("StorageCube"))
         {
             script.pushStart();
