@@ -24,6 +24,7 @@ public class scoregame : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        Cursor.lockState = CursorLockMode.Locked;
 
     }
 
