@@ -8,12 +8,12 @@ public class ReceptacleSpins : MonoBehaviour
     public float ySpinSpeed;
     public float zSpinSpeed;
     public bool startOn = true;
-    public bool spin = startOn;
+    private bool spin;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        spin = startOn;
     }
 
     // Update is called once per frame
@@ -27,11 +27,11 @@ public class ReceptacleSpins : MonoBehaviour
 
     public void pushStart()
     {
-        spin = !spin;
+        spin = !startOn;
     }
 
     public void pushExit()
     {
-
+        spin = startOn;
     }
 }

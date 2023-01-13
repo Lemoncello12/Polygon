@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class SpinsIfReceptacleOn : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public ReceptacleSpins script;
+
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerStay(Collider other)
     {
-        
+        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("StorageCube"))
+        {
+            script.pushStart();
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("StorageCube"))
+        {
+            script.pushExit();
+        }
     }
 }
