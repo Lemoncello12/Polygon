@@ -85,7 +85,7 @@ public class scoregame : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         //Debug.Log("Entered");
-        if (collision.gameObject.tag == ("Ground"))
+        if (collision.gameObject.tag == ("Ground") || collision.gameObject.tag ==("StorageCube"))
         {
             cubeIsOnTheGround = true;
         }
