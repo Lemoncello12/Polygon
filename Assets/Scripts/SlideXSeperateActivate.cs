@@ -6,7 +6,7 @@ public class SlideXSeperateActivate : MonoBehaviour
 {
     public float speed = 5f;
     public int limit;
-    private bool activated = false;
+    public bool activated = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,11 +22,20 @@ public class SlideXSeperateActivate : MonoBehaviour
             {
                 transform.Translate(Time.deltaTime * speed, 0, 0);
             }
+            else
+            {
+
+            }
         }
     }
 
     public void ON()
     {
         activated = true;
+    }
+
+    public void OFF()
+    {
+        activated = false;
     }
 }
