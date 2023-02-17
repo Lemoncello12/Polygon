@@ -13,6 +13,7 @@ public class GoodBlockBadBlock : MonoBehaviour
     void Start()
     {
         timeLeft = timerLength;
+
     }
 
     // Update is called once per frame
