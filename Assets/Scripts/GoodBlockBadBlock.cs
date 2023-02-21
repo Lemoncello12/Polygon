@@ -5,14 +5,28 @@ using UnityEngine;
 public class GoodBlockBadBlock : MonoBehaviour
 {
     public float timerLength = 1f;
-    public Material otherMat;
-    private Material mat;
+    public Material badMat;
+    private Material goodMat;
     private float timeLeft;
     public bool good = true;
+    private doDamageIfOn script;
     // Start is called before the first frame update
     void Start()
     {
         timeLeft = timerLength;
+        goodMat = GetComponent<MeshRenderer>().material;
+        script = GetComponent<doDamageIfOn>();
+
+        if (good)
+        {
+            GetComponent<MeshRenderer>().material = goodMat;
+            script.OFF();
+        }
+        else
+        {
+            GetComponent<MeshRenderer>().material = badMat;
+            script.ON();
+        }
 
     }
 
@@ -21,11 +35,13 @@ public class GoodBlockBadBlock : MonoBehaviour
     {
         if (good)
         {
-
+            GetComponent<MeshRenderer>().material = goodMat;
+            script.OFF();
         }
         else
         {
-
+            GetComponent<MeshRenderer>().material = badMat;
+            script.ON();
         }
 
         if (timeLeft > 0)
