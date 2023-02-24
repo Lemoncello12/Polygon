@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Portal.unity
     guid: 38df61c7311553940952ba3b661c7e4b
+  - enabled: 1
+    path: Assets/Scenes/Perilous Pyramid.unity
+    guid: 2a13b2bc42f7fa44ebc40ab6b0c6dcdd
   m_configObjects: {}

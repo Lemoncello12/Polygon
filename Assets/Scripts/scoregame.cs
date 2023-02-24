@@ -16,7 +16,7 @@ public class scoregame : MonoBehaviour
     public TextMeshProUGUI ScoreText;
     public int score;
     public int scoreToWin = 4;
-    int sceneNum = 11;
+    int sceneNum = 12;
 
 
 
