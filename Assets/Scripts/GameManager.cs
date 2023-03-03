@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public GameObject Player;
+    public float screenLength = 5f;
+    public GameObject gameOver;
     private Vector3 _spawnPos;
     //private Quaternion _spawnRot;
     private HealthScript _health;
@@ -21,7 +23,8 @@ public class GameManager : MonoBehaviour
 
     public void OnDeath()
     {
-        Invoke("Reset", 3); //Respawn in 3 seconds.
+        gameOver.SetActive(true);
+        Invoke("Reset", screenLength); //Respawn in 3 seconds.
     }
 
     public void Reset()
