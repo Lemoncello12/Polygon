@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 8756412}
   - component: {fileID: 8756411}
   m_Layer: 5
-  m_Name: LevelDone?
+  m_Name: LevelDone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -519,7 +519,7 @@ GameObject:
   - component: {fileID: 158472179}
   - component: {fileID: 158472178}
   m_Layer: 5
-  m_Name: SecretDone?
+  m_Name: SecretDone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -595,7 +595,7 @@ GameObject:
   - component: {fileID: 213672464}
   - component: {fileID: 213672463}
   m_Layer: 5
-  m_Name: SecretDone?
+  m_Name: SecretDone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -671,7 +671,7 @@ GameObject:
   - component: {fileID: 237513082}
   - component: {fileID: 237513081}
   m_Layer: 5
-  m_Name: LevelDone?
+  m_Name: LevelDone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -747,7 +747,7 @@ GameObject:
   - component: {fileID: 256282648}
   - component: {fileID: 256282647}
   m_Layer: 5
-  m_Name: LevelDone?
+  m_Name: LevelDone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1227,7 +1227,7 @@ GameObject:
   - component: {fileID: 422017620}
   - component: {fileID: 422017619}
   m_Layer: 5
-  m_Name: LevelDone?
+  m_Name: LevelDone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1341,7 +1341,7 @@ GameObject:
   - component: {fileID: 433178087}
   - component: {fileID: 433178086}
   m_Layer: 5
-  m_Name: SecretDone?
+  m_Name: SecretDone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1632,7 +1632,7 @@ GameObject:
   - component: {fileID: 574453688}
   - component: {fileID: 574453687}
   m_Layer: 5
-  m_Name: LevelDone?
+  m_Name: LevelDone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1961,7 +1961,7 @@ GameObject:
   - component: {fileID: 635683707}
   - component: {fileID: 635683706}
   m_Layer: 5
-  m_Name: SecretDone?
+  m_Name: SecretDone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2627,7 +2627,7 @@ GameObject:
   - component: {fileID: 989243992}
   - component: {fileID: 989243991}
   m_Layer: 5
-  m_Name: LevelDone?
+  m_Name: LevelDone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2703,7 +2703,7 @@ GameObject:
   - component: {fileID: 1018676260}
   - component: {fileID: 1018676259}
   m_Layer: 5
-  m_Name: SecretDone?
+  m_Name: SecretDone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2859,7 +2859,7 @@ GameObject:
   - component: {fileID: 1074168115}
   - component: {fileID: 1074168114}
   m_Layer: 5
-  m_Name: LevelDone?
+  m_Name: LevelDone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3070,7 +3070,7 @@ GameObject:
   - component: {fileID: 1177331158}
   - component: {fileID: 1177331157}
   m_Layer: 5
-  m_Name: SecretDone?
+  m_Name: SecretDone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3306,7 +3306,7 @@ GameObject:
   - component: {fileID: 1259632990}
   - component: {fileID: 1259632989}
   m_Layer: 5
-  m_Name: LevelDone?
+  m_Name: LevelDone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3382,7 +3382,7 @@ GameObject:
   - component: {fileID: 1270208181}
   - component: {fileID: 1270208180}
   m_Layer: 5
-  m_Name: SecretDone?
+  m_Name: SecretDone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3458,7 +3458,7 @@ GameObject:
   - component: {fileID: 1280047735}
   - component: {fileID: 1280047734}
   m_Layer: 5
-  m_Name: LevelDone?
+  m_Name: LevelDone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3669,7 +3669,7 @@ GameObject:
   - component: {fileID: 1305292498}
   - component: {fileID: 1305292497}
   m_Layer: 5
-  m_Name: SecretDone?
+  m_Name: SecretDone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3744,6 +3744,7 @@ GameObject:
   - component: {fileID: 1309159171}
   - component: {fileID: 1309159170}
   - component: {fileID: 1309159172}
+  - component: {fileID: 1309159173}
   m_Layer: 0
   m_Name: Game Opener
   m_TagString: Untagged
@@ -3874,6 +3875,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1309159173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309159169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 493ded941efc7654c89ee9f417057908, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finished: 000000000000000000000000
+  secrets: 000000000000000000000000
 --- !u!1 &1329682947
 GameObject:
   m_ObjectHideFlags: 0
@@ -3966,7 +3981,7 @@ GameObject:
   - component: {fileID: 1363519002}
   - component: {fileID: 1363519001}
   m_Layer: 5
-  m_Name: LevelDone?
+  m_Name: LevelDone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4042,7 +4057,7 @@ GameObject:
   - component: {fileID: 1429538551}
   - component: {fileID: 1429538550}
   m_Layer: 5
-  m_Name: SecretDone?
+  m_Name: SecretDone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4198,7 +4213,7 @@ GameObject:
   - component: {fileID: 1449606943}
   - component: {fileID: 1449606942}
   m_Layer: 5
-  m_Name: SecretDone?
+  m_Name: SecretDone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4798,7 +4813,7 @@ GameObject:
   - component: {fileID: 1638378948}
   - component: {fileID: 1638378947}
   m_Layer: 5
-  m_Name: LevelDone?
+  m_Name: LevelDone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4912,7 +4927,7 @@ GameObject:
   - component: {fileID: 1746198573}
   - component: {fileID: 1746198572}
   m_Layer: 5
-  m_Name: LevelDone?
+  m_Name: LevelDone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4988,7 +5003,7 @@ GameObject:
   - component: {fileID: 1863031078}
   - component: {fileID: 1863031077}
   m_Layer: 5
-  m_Name: SecretDone?
+  m_Name: SecretDone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5418,7 +5433,7 @@ GameObject:
   - component: {fileID: 2005409793}
   - component: {fileID: 2005409792}
   m_Layer: 5
-  m_Name: SecretDone?
+  m_Name: SecretDone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
