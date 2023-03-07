@@ -7,7 +7,7 @@ public class CheckMenuForUI : MonoBehaviour
     public int sceneNum;
     public GameObject button1;
     public GameObject button2;
-    public MenuSaveItems script;
+    public LocalSave script;
     // Start is called before the first frame update
     void Start()
     {

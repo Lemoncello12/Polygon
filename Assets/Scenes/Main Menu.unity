@@ -4004,7 +4004,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1309159169}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 493ded941efc7654c89ee9f417057908, type: 3}
+  m_Script: {fileID: 11500000, guid: f92f12c021297a041a430b9d84ddb8c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   finished: 000000000000000000000000
@@ -5521,7 +5521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a150f6082000914daefe5788d0bdc56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNum: 1
+  sceneNum: 0
   button1: {fileID: 989243989}
   button2: {fileID: 1429538548}
   script: {fileID: 1309159173}
