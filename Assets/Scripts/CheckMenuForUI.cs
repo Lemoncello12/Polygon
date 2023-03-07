@@ -5,8 +5,9 @@ using UnityEngine;
 public class CheckMenuForUI : MonoBehaviour
 {
     public int sceneNum;
-    public LevelDone? button1;
-    public SecretDone? button2;
+    public GameObject button1;
+    public GameObject button2;
+    public MenuSaveItems script;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,22 @@ public class CheckMenuForUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (script.finished[sceneNum - 1])
+        {
+            button1.SetActive(true);
+        }
+        else
+        {
+            button1.SetActive(false);
+        }
+
+        if (script.secrets[sceneNum - 1])
+        {
+            button2.SetActive(true);
+        }
+        else
+        {
+            button2.SetActive(false);
+        }
     }
 }
