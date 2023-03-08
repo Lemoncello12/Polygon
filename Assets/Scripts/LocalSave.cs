@@ -9,7 +9,7 @@ public class LocalSave : MonoBehaviour
 
     public void SavePlayer()
     {
-        SaveSystem.SavePlayer();
+        SaveSystem.SavePlayer(this);
     }
 
     public void LoadPlayer()
