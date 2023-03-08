@@ -12,10 +12,12 @@ public class scoregame : MonoBehaviour
     public float jumpForce = 9;
 
     public bool cubeIsOnTheGround = true;
+    public bool secretGet = false;
 
     public TextMeshProUGUI ScoreText;
     public int score;
     public int scoreToWin = 4;
+    public LocalSave save;
     int sceneNum = 12;
 
 
@@ -25,6 +27,7 @@ public class scoregame : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
+        secretGet = save.secrets[SceneManager.GetActiveScene().buildIndex - 1];
 
     }
 
@@ -51,6 +54,7 @@ public class scoregame : MonoBehaviour
     {
         ScoreText.text = "You Win";
         //Time.timeScale = 0f;
+        save.LevelComplete(secretGet);
         if (SceneManager.GetActiveScene().buildIndex == sceneNum)
         {
             SceneManager.LoadScene(0);

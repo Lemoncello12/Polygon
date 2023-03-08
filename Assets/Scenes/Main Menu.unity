@@ -5521,7 +5521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a150f6082000914daefe5788d0bdc56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNum: 0
+  sceneNum: 1
   button1: {fileID: 989243989}
   button2: {fileID: 1429538548}
   script: {fileID: 1309159173}
