@@ -12,6 +12,27 @@ public static class SaveSystem
 
         PlayerData data = new PlayerData(save);
 
-        //Stopped at timestamp 10:58 of the video
+        formatter.Serialize(stream, data);
+        stream.Close();
+    }
+
+    public static PlayerData LoadPlayer()
+    {
+        string path = Application.persistentDataPath + "/polygondata.pasta";
+        if (File.Exists(path))
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            FileStream stream = new FileStream(path, FileMode.Open);
+
+            PlayerData data = formatter.Deserialize(stream) as PlayerData;
+            stream.Close();
+
+            return data;
+        }
+        else
+        {
+            Debug.LogError("Save file not found in" + path);
+            return null;
+        }
     }
 }
