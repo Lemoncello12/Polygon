@@ -105,6 +105,7 @@ public class scoregame : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("Secret"))
         {
+            secretGet = true;
             other.gameObject.SetActive(false);
         }
 
