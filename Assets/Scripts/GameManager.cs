@@ -35,4 +35,9 @@ public class GameManager : MonoBehaviour
         //Player.transform.rotation = _spawnRot;
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
 }
