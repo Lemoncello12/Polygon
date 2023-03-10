@@ -7,6 +7,7 @@ public class LocalSave : MonoBehaviour
 {
     public bool[] finished = new bool[12];
     public bool[] secrets = new bool[12];
+    public bool[] oopsAllFalse = new bool[12];
 
     void Start()
     {
@@ -32,5 +33,12 @@ public class LocalSave : MonoBehaviour
 
         finished = data.finished;
         secrets = data.secrets;
+    }
+
+    public void ResetPlayer()
+    {
+        finished = oopsAllFalse;
+        secrets = oopsAllFalse;
+        SaveSystem.SavePlayer(this);
     }
 }
