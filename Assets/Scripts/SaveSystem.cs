@@ -35,4 +35,10 @@ public static class SaveSystem
             return null;
         }
     }
+
+    public static void DeletePlayer()
+    {
+        string path = Application.persistentDataPath + "/polygondata.pasta";
+        File.Delete(path);
+    }
 }
