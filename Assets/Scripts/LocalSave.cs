@@ -7,6 +7,8 @@ public class LocalSave : MonoBehaviour
 {
     public bool[] finished = new bool[12];
     public bool[] secrets = new bool[12];
+    public bool sprintLock = false;
+    public bool gunLock = false;
 
     void Start()
     {

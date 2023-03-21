@@ -16,8 +16,11 @@ public class scoregame : MonoBehaviour
 
     public TextMeshProUGUI ScoreText;
     public int score;
+    private float sprint = 1f;
+    public float sprintTo = 3f;
     public int scoreToWin = 4;
     public LocalSave save;
+    public GameObject gun;
     int sceneNum = 12;
 
 
@@ -28,6 +31,10 @@ public class scoregame : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
         secretGet = save.secrets[SceneManager.GetActiveScene().buildIndex - 1];
+        if (save.gunLock)
+        {
+            gun.SetActive(true);
+        }
 
     }
 
@@ -76,7 +83,19 @@ public class scoregame : MonoBehaviour
         //Vector3 movePlayer = transform.position;
         //movePlayer.x = movePlayer.x + leftRight * speed * 10 * Time.deltaTime;
         //movePlayer.z = movePlayer.z + forwardBack * speed * 10 * Time.deltaTime;
-        Vector3 movePlayer = new Vector3(leftRight, 0, forwardBack) * speed * Time.deltaTime;
+        if (save.sprintLock)
+        {
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                sprint = sprintTo;
+            }
+            if (Input.GetKeyUp(KeyCode.LeftShift))
+            {
+                sprint = 1;
+            }
+        }
+        
+        Vector3 movePlayer = new Vector3(leftRight, 0, forwardBack) * speed * sprint * Time.deltaTime;
         transform.Translate(movePlayer, Space.Self);
         //rb.MovePosition(movePlayer);
         if (Input.GetButtonDown("Jump") && cubeIsOnTheGround)
