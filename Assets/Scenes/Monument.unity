@@ -1243,7 +1243,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finished: 000000000000000000000000
   secrets: 000000000000000000000000
-  oopsAllFalse: 000000000000000000000000
+  sprintLock: 0
+  gunLock: 0
 --- !u!1 &366728085
 GameObject:
   m_ObjectHideFlags: 0
@@ -3778,6 +3779,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2601992796692123648, guid: c3fef0fcb432ca54192eb84180eec0df,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3fef0fcb432ca54192eb84180eec0df, type: 3}

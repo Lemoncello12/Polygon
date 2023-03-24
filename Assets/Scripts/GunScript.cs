@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GunScript : MonoBehaviour
 {
-    public Rigidbody bullet;
+    public GameObject bullet;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,9 +16,9 @@ public class GunScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            Rigidbody clone;
+            GameObject clone;
             clone = Instantiate(bullet, transform.position, transform.rotation);
-            clone.velocity = transform.TransformDirection(Vector3.forward * 10);
+            clone.GetComponent<Rigidbody>().velocity = transform.TransformDirection(Vector3.forward * 10);
         }
     }
 }

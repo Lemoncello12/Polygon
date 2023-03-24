@@ -16,7 +16,7 @@ public class scoregame : MonoBehaviour
 
     public TextMeshProUGUI ScoreText;
     public int score;
-    private float sprint = 1f;
+    private float sprint = 1;
     public float sprintTo = 3f;
     public int scoreToWin = 4;
     public LocalSave save;
