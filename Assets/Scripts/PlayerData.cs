@@ -7,6 +7,8 @@ public class PlayerData
 {
     public bool[] finished;
     public bool[] secrets;
+    public bool sprintLock = false;
+    public bool gunLock = false;
 
     public PlayerData (LocalSave save)
     {
