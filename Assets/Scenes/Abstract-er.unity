@@ -358,6 +358,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &207771773
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -605,6 +608,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!114 &297463850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -917,6 +923,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &382823975
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1034,7 +1043,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 408758591}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1836,6 +1845,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 100
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1039599554
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2147,6 +2159,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!114 &1210675045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2609,7 +2624,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finished: 000000000000000000000000
   secrets: 000000000000000000000000
-  oopsAllFalse: 000000000000000000000000
+  sprintLock: 0
+  gunLock: 0
 --- !u!1 &1281073945
 GameObject:
   m_ObjectHideFlags: 0
@@ -2807,6 +2823,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1436803661
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3087,6 +3106,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!114 &1710907412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3687,6 +3709,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!114 &2100469068
 MonoBehaviour:
   m_ObjectHideFlags: 0

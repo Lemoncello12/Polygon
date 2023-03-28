@@ -338,6 +338,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 20
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!136 &58652684
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -548,6 +551,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &160418765
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -803,6 +809,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &260238925
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1319,6 +1328,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &383306511
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2109,6 +2121,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &746469536
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3299,6 +3314,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 100
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!1 &1160833170
 GameObject:
   m_ObjectHideFlags: 0
@@ -4360,6 +4378,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 50
+  hpMax: 200
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1414297747
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4488,6 +4509,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 20
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!136 &1418673226
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4698,6 +4722,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1447421143
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5082,6 +5109,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1722093502
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5486,6 +5516,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1815292151
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5643,6 +5676,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1878290534
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6172,7 +6208,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finished: 000000000000000000000000
   secrets: 000000000000000000000000
-  oopsAllFalse: 000000000000000000000000
+  sprintLock: 0
+  gunLock: 0
 --- !u!1 &2028108580
 GameObject:
   m_ObjectHideFlags: 0

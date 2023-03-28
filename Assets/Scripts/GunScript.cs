@@ -18,7 +18,7 @@ public class GunScript : MonoBehaviour
         {
             GameObject clone;
             clone = Instantiate(bullet, transform.position, transform.rotation);
-            clone.GetComponent<Rigidbody>().velocity = transform.TransformDirection(Vector3.forward * 10);
+            
         }
     }
 }
