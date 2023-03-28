@@ -3518,6 +3518,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 100
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &836935111
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3783,7 +3786,7 @@ PrefabInstance:
     - target: {fileID: 2601992796692123648, guid: c3fef0fcb432ca54192eb84180eec0df,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3fef0fcb432ca54192eb84180eec0df, type: 3}
