@@ -5,11 +5,13 @@ using UnityEngine;
 public class Despawn : MonoBehaviour
 {
     public float timerLength = 10f;
+    private AudioSource audio;
     private float timeRemaining;
     // Start is called before the first frame update
     void Start()
     {
         timeRemaining = timerLength;
+        audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame

@@ -8,10 +8,14 @@ public class doDamage : MonoBehaviour
     public float hpMax = 10f;
     public float damageRecieved = 10f;
     public float currentHP;
+    private GameObject player;
+    private AudioSource audio;
 
     void Start()
     {
         currentHP = hpMax;
+        player = GameObject.find("Player")
+        audio = player.GetComponent<AudioSource>();
     }
 
     void Update()
