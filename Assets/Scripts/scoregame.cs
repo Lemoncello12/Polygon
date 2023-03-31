@@ -11,7 +11,8 @@ public class scoregame : MonoBehaviour
 
     public float jumpForce = 9;
 
-    public bool cubeIsOnTheGround = true;
+    private int cubeIsOnTheGround;
+    public int maxJump = 1;
     public bool secretGet = false;
 
     public TextMeshProUGUI ScoreText;
@@ -35,6 +36,11 @@ public class scoregame : MonoBehaviour
         {
             gun.SetActive(true);
         }
+        if (save.jumpLock)
+        {
+            maxJump = 2;
+        }
+        cubeIsOnTheGround = maxJump;
 
     }
 
@@ -98,10 +104,10 @@ public class scoregame : MonoBehaviour
         Vector3 movePlayer = new Vector3(leftRight, 0, forwardBack) * speed * sprint * Time.deltaTime;
         transform.Translate(movePlayer, Space.Self);
         //rb.MovePosition(movePlayer);
-        if (Input.GetButtonDown("Jump") && cubeIsOnTheGround)
+        if (Input.GetButtonDown("Jump") && cubeIsOnTheGround > 0)
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            cubeIsOnTheGround = false;
+            cubeIsOnTheGround = cubeIsOnTheGround-1;
         }
     }
 
@@ -110,7 +116,7 @@ public class scoregame : MonoBehaviour
         //Debug.Log("Entered");
         if (collision.gameObject.tag == ("Ground") || collision.gameObject.tag ==("StorageCube"))
         {
-            cubeIsOnTheGround = true;
+            cubeIsOnTheGround = maxJump;
         }
     }
 
