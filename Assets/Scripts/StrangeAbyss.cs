@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class StrangeAbyss : MonoBehaviour
 {
+    private GameObject player;
+    private scoregame script;
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GameObject.Find("Player");
+        script = player.GetComponent<scoregame>();
     }
 
     // Update is called once per frame
@@ -19,7 +22,7 @@ public class StrangeAbyss : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<Transform>().position.y += 250;
+            script.Up();
         }
     }
 }

@@ -133,6 +133,10 @@ public class scoregame : MonoBehaviour
             secretGet = true;
             other.gameObject.SetActive(false);
         }
+        else if (other.gameObject.CompareTag("GunActivate"))
+        {
+        
+        }
 
     }
 
@@ -152,6 +156,11 @@ public class scoregame : MonoBehaviour
     {
         score++;
         ScoreText.text = score.ToString();
+    }
+
+    public void Up()
+    {
+        transform.position = new Vector3(transform.position.x, 400, transform.position.z);
     }
 
 
