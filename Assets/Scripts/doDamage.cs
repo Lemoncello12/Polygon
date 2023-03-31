@@ -14,7 +14,7 @@ public class doDamage : MonoBehaviour
     void Start()
     {
         currentHP = hpMax;
-        player = GameObject.find("Player")
+        player = GameObject.Find("Player");
         audio = player.GetComponent<AudioSource>();
     }
 
@@ -33,6 +33,7 @@ public class doDamage : MonoBehaviour
     public void takeDamage()
     {
         currentHP = currentHP - damageRecieved;
+        audio.Play();
 
         if (currentHP == 0)
         {
