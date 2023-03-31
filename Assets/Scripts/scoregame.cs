@@ -135,7 +135,7 @@ public class scoregame : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("GunActivate"))
         {
-        
+            
         }
 
     }
