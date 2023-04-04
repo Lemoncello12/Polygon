@@ -15,5 +15,8 @@ public class PlayerData
     {
         finished = save.finished;
         secrets = save.secrets;
+        gunLock = save.gunLock;
+        jumpLock = save.jumpLock;
+        sprintLock = save.sprintLock;
     }
 }

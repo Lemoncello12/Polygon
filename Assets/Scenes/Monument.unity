@@ -1243,8 +1243,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finished: 000000000000000000000000
   secrets: 000000000000000000000000
-  sprintLock: 0
   gunLock: 0
+  jumpLock: 0
+  sprintLock: 0
 --- !u!1 &366728085
 GameObject:
   m_ObjectHideFlags: 0
@@ -2998,7 +2999,7 @@ GameObject:
   - component: {fileID: 790558568}
   m_Layer: 0
   m_Name: Ceiling 1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3095,7 +3096,7 @@ GameObject:
   - component: {fileID: 797313439}
   m_Layer: 0
   m_Name: Ceiling 3
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3192,7 +3193,7 @@ GameObject:
   - component: {fileID: 806894005}
   m_Layer: 0
   m_Name: Wall 5
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6323,7 +6324,7 @@ GameObject:
   - component: {fileID: 2071456996}
   m_Layer: 0
   m_Name: Ceiling 3
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

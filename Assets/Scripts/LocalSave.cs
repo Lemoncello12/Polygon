@@ -30,6 +30,26 @@ public class LocalSave : MonoBehaviour
 
         LoadSecrets();
     }
+    public void PowerUpGet(int powerup)
+    {
+        if (powerup == 0)
+        {
+            gunLock = true;
+        }
+        else if (powerup == 1)
+        {
+            jumpLock = true;
+        }
+        else if (powerup == 2)
+        {
+            sprintLock = true;
+        }
+        else
+        {
+            Debug.LogError("Power up number is out of bounds");
+        }
+        SavePlayer();
+    }
 
     public void SavePlayer()
     {
@@ -60,7 +80,7 @@ public class LocalSave : MonoBehaviour
        }
         if (value >= 4 && gunLock == false)
         {
-
+            SceneManager.LoadScene(13);
         }
         else if (value >= 8 && jumpLock == false)
         {

@@ -135,7 +135,9 @@ public class scoregame : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("GunActivate"))
         {
-            
+            other.gameObject.SetActive(false);
+            save.PowerUpGet(0);
+            Application.Quit();
         }
 
     }
