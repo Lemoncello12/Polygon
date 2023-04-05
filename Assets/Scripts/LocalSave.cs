@@ -14,6 +14,7 @@ public class LocalSave : MonoBehaviour
     void Start()
     {
         LoadPlayer();
+
         if(SceneManager.GetActiveScene().buildIndex == 0)
         {
             LoadSecrets();
@@ -49,6 +50,8 @@ public class LocalSave : MonoBehaviour
             Debug.LogError("Power up number is out of bounds");
         }
         SavePlayer();
+
+        SceneManager.LoadScene(0);
     }
 
     public void SavePlayer()
@@ -62,6 +65,9 @@ public class LocalSave : MonoBehaviour
 
         finished = data.finished;
         secrets = data.secrets;
+        gunLock = data.gunLock;
+        jumpLock = data.jumpLock;
+        sprintLock = data.sprintLock;
     }
 
     public void ResetPlayer()
