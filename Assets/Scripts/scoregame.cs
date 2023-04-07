@@ -139,6 +139,11 @@ public class scoregame : MonoBehaviour
             other.gameObject.SetActive(false);
             save.PowerUpGet(0);
         }
+        else if (other.gameObject.CompareTag("JumpActivate"))
+        {
+            other.gameObject.SetActive(false);
+            save.PowerUpGet(1);
+        }
 
     }
 
