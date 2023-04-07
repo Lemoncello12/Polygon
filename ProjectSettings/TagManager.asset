@@ -12,6 +12,7 @@ TagManager:
   - Abyss
   - StorageCube
   - GunActivate
+  - JumpActivate
   layers:
   - Default
   - TransparentFX
