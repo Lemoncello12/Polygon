@@ -32,7 +32,7 @@ public class scoregame : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
         secretGet = save.secrets[SceneManager.GetActiveScene().buildIndex - 1];
-        if (save.gunLock)
+        if (save.gunLock == true)
         {
             gun.SetActive(true);
         }
@@ -68,6 +68,7 @@ public class scoregame : MonoBehaviour
         ScoreText.text = "You Win";
         //Time.timeScale = 0f;
         save.LevelComplete(secretGet);
+        save.LoadSecrets();
         if (SceneManager.GetActiveScene().buildIndex == sceneNum)
         {
             SceneManager.LoadScene(0);

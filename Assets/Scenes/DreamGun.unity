@@ -311,8 +311,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169018080}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.24905, y: -24.165306, z: 15.201143}
-  m_LocalScale: {x: 248.89557, y: 1, z: 213.28}
+  m_LocalPosition: {x: -0.24906, y: -24.165306, z: 15.201}
+  m_LocalScale: {x: 861.65155, y: 1, z: 1206.7191}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -421,7 +421,7 @@ Transform:
   m_GameObject: {fileID: 176814280}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 18.25, y: -0.5, z: -84.7}
-  m_LocalScale: {x: 9, y: 1000, z: 9}
+  m_LocalScale: {x: 9, y: 2960.5999, z: 9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -518,7 +518,7 @@ Transform:
   m_GameObject: {fileID: 506704166}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -17.2, y: -0.5, z: -43.4}
-  m_LocalScale: {x: 9, y: 1000, z: 9}
+  m_LocalScale: {x: 9, y: 2960.5999, z: 9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -692,7 +692,7 @@ Transform:
   m_GameObject: {fileID: 603234469}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 18.25, y: -0.5, z: -9.77}
-  m_LocalScale: {x: 3, y: 1000, z: 3}
+  m_LocalScale: {x: 3, y: 2960.5999, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -924,7 +924,7 @@ Transform:
   m_GameObject: {fileID: 866777637}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 18.25, y: -0.5, z: -119.6}
-  m_LocalScale: {x: 9, y: 1000, z: 9}
+  m_LocalScale: {x: 9, y: 2960.5999, z: 9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1021,7 +1021,7 @@ Transform:
   m_GameObject: {fileID: 888223017}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -17.2, y: -0.5, z: -84.7}
-  m_LocalScale: {x: 9, y: 1000, z: 9}
+  m_LocalScale: {x: 9, y: 2960.5999, z: 9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1280,7 +1280,7 @@ Transform:
   m_GameObject: {fileID: 1364766425}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -17.2, y: -0.5, z: -119.6}
-  m_LocalScale: {x: 9, y: 1000, z: 9}
+  m_LocalScale: {x: 9, y: 2960.5999, z: 9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1383,7 +1383,7 @@ Transform:
   m_GameObject: {fileID: 1454181730}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 18.25, y: -0.5, z: -154.5}
-  m_LocalScale: {x: 9, y: 1000, z: 9}
+  m_LocalScale: {x: 9, y: 2960.5999, z: 9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1784,7 +1784,7 @@ Transform:
   m_GameObject: {fileID: 1647773719}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 18.25, y: -0.5, z: -43.4}
-  m_LocalScale: {x: 9, y: 1000, z: 9}
+  m_LocalScale: {x: 9, y: 2960.5999, z: 9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1881,7 +1881,7 @@ Transform:
   m_GameObject: {fileID: 1689022063}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -17.2, y: -0.5, z: -154.5}
-  m_LocalScale: {x: 9, y: 1000, z: 9}
+  m_LocalScale: {x: 9, y: 2960.5999, z: 9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1978,7 +1978,7 @@ Transform:
   m_GameObject: {fileID: 1814308355}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -17.2, y: -0.5, z: -9.77}
-  m_LocalScale: {x: 9, y: 1000, z: 9}
+  m_LocalScale: {x: 9, y: 2960.5999, z: 9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2075,7 +2075,7 @@ Transform:
   m_GameObject: {fileID: 1974204314}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 18.25, y: -0.5, z: -9.77}
-  m_LocalScale: {x: 9, y: 1000, z: 9}
+  m_LocalScale: {x: 9, y: 2960.5999, z: 9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2335,8 +2335,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You died? This isn't even a real scene! What the heck are you doing, Mr.
-    Developer Man?
+  m_text: How did you die? This is a dream, not real life, stupid!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

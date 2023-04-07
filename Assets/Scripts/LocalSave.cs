@@ -10,13 +10,28 @@ public class LocalSave : MonoBehaviour
     public bool gunLock = false;
     public bool jumpLock = false;
     public bool sprintLock = false;
+    public GameObject gun;
+    public GameObject jump;
+    public GameObject sprint;
 
-    void Start()
+    void Awake()
     {
         LoadPlayer();
 
         if(SceneManager.GetActiveScene().buildIndex == 0)
         {
+            if (gunLock == true)
+            {
+                gun.SetActive(true);
+            }
+            if (jumpLock == true)
+            {
+                jump.SetActive(true);
+            }
+            if (sprintLock == true)
+            {
+                sprint.SetActive(true);
+            }
             LoadSecrets();
         }
         
@@ -28,8 +43,6 @@ public class LocalSave : MonoBehaviour
         secrets[SceneManager.GetActiveScene().buildIndex - 1] = secret;
 
         SavePlayer();
-
-        LoadSecrets();
     }
     public void PowerUpGet(int powerup)
     {
@@ -76,7 +89,7 @@ public class LocalSave : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    void LoadSecrets()
+    public void LoadSecrets()
     {
        int value = 0;
  
