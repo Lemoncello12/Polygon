@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.021663688, g: 0.01136612, b: 0.01931896, a: 1}
+  m_IndirectSpecularColor: {r: 0.02197137, g: 0.011600442, b: 0.01956215, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -338,6 +338,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 20
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!136 &58652684
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -548,6 +551,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &160418765
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -803,6 +809,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &260238925
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1319,6 +1328,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &383306511
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1757,7 +1769,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1175, y: 527}
+  m_SizeDelta: {x: 5000, y: 5000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &502561166
 MonoBehaviour:
@@ -2055,6 +2067,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1109834665330908687, guid: c3fef0fcb432ca54192eb84180eec0df,
         type: 3}
+      propertyPath: save
+      value: 
+      objectReference: {fileID: 1986764921}
+    - target: {fileID: 1109834665330908687, guid: c3fef0fcb432ca54192eb84180eec0df,
+        type: 3}
       propertyPath: ScoreText
       value: 
       objectReference: {fileID: 957681196}
@@ -2104,6 +2121,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &746469536
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3294,6 +3314,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 100
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!1 &1160833170
 GameObject:
   m_ObjectHideFlags: 0
@@ -4355,6 +4378,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 50
+  hpMax: 200
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1414297747
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4483,6 +4509,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 20
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!136 &1418673226
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4693,6 +4722,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1447421143
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5077,6 +5109,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1722093502
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5481,6 +5516,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1815292151
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5638,6 +5676,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1878290534
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6019,6 +6060,7 @@ GameObject:
   - component: {fileID: 1986764919}
   - component: {fileID: 1986764918}
   - component: {fileID: 1986764920}
+  - component: {fileID: 1986764921}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -6152,6 +6194,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1986764921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986764917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f92f12c021297a041a430b9d84ddb8c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finished: 000000000000000000000000
+  secrets: 000000000000000000000000
+  sprintLock: 0
+  gunLock: 0
 --- !u!1 &2028108580
 GameObject:
   m_ObjectHideFlags: 0

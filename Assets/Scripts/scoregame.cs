@@ -11,11 +11,17 @@ public class scoregame : MonoBehaviour
 
     public float jumpForce = 9;
 
-    public bool cubeIsOnTheGround = true;
+    private int cubeIsOnTheGround;
+    public int maxJump = 1;
+    public bool secretGet = false;
 
     public TextMeshProUGUI ScoreText;
     public int score;
+    private float sprint = 1;
+    public float sprintTo = 3f;
     public int scoreToWin = 4;
+    public LocalSave save;
+    public GameObject gun;
     int sceneNum = 12;
 
 
@@ -25,13 +31,23 @@ public class scoregame : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
+        secretGet = save.secrets[SceneManager.GetActiveScene().buildIndex - 1];
+        if (save.gunLock == true)
+        {
+            gun.SetActive(true);
+        }
+        if (save.jumpLock)
+        {
+            maxJump = 2;
+        }
+        cubeIsOnTheGround = maxJump;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             SceneManager.LoadScene(0);
         }
@@ -51,6 +67,8 @@ public class scoregame : MonoBehaviour
     {
         ScoreText.text = "You Win";
         //Time.timeScale = 0f;
+        save.LevelComplete(secretGet);
+        save.LoadSecrets();
         if (SceneManager.GetActiveScene().buildIndex == sceneNum)
         {
             SceneManager.LoadScene(0);
@@ -72,13 +90,25 @@ public class scoregame : MonoBehaviour
         //Vector3 movePlayer = transform.position;
         //movePlayer.x = movePlayer.x + leftRight * speed * 10 * Time.deltaTime;
         //movePlayer.z = movePlayer.z + forwardBack * speed * 10 * Time.deltaTime;
-        Vector3 movePlayer = new Vector3(leftRight, 0, forwardBack) * speed * Time.deltaTime;
+        if (save.sprintLock)
+        {
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                sprint = sprintTo;
+            }
+            if (Input.GetKeyUp(KeyCode.LeftShift))
+            {
+                sprint = 1;
+            }
+        }
+        
+        Vector3 movePlayer = new Vector3(leftRight, 0, forwardBack) * speed * sprint * Time.deltaTime;
         transform.Translate(movePlayer, Space.Self);
         //rb.MovePosition(movePlayer);
-        if (Input.GetButtonDown("Jump") && cubeIsOnTheGround)
+        if (Input.GetButtonDown("Jump") && cubeIsOnTheGround > 0)
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            cubeIsOnTheGround = false;
+            cubeIsOnTheGround = cubeIsOnTheGround-1;
         }
     }
 
@@ -87,7 +117,7 @@ public class scoregame : MonoBehaviour
         //Debug.Log("Entered");
         if (collision.gameObject.tag == ("Ground") || collision.gameObject.tag ==("StorageCube"))
         {
-            cubeIsOnTheGround = true;
+            cubeIsOnTheGround = maxJump;
         }
     }
 
@@ -101,7 +131,13 @@ public class scoregame : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("Secret"))
         {
+            secretGet = true;
             other.gameObject.SetActive(false);
+        }
+        else if (other.gameObject.CompareTag("GunActivate"))
+        {
+            other.gameObject.SetActive(false);
+            save.PowerUpGet(0);
         }
 
     }
@@ -122,6 +158,11 @@ public class scoregame : MonoBehaviour
     {
         score++;
         ScoreText.text = score.ToString();
+    }
+
+    public void Up()
+    {
+        transform.position = new Vector3(transform.position.x, 400, transform.position.z);
     }
 
 
