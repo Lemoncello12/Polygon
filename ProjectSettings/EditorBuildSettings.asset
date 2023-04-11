@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DreamGun.unity
     guid: f54d8a992335c0044b89c65107281d20
+  - enabled: 1
+    path: Assets/Scenes/DreamJump.unity
+    guid: bcf7b4882b50eaf418558d1642fb398d
   m_configObjects: {}
