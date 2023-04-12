@@ -49,7 +49,14 @@ public class scoregame : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            SceneManager.LoadScene(0);
+            if (SceneManager.GetActiveScene().buildIndex < 13)
+            {
+                SceneManager.LoadScene(0);
+            }
+            else
+            {
+                Application.Quit();
+            }
         }
         PlayerMove();
 
@@ -108,7 +115,7 @@ public class scoregame : MonoBehaviour
         if (Input.GetButtonDown("Jump") && cubeIsOnTheGround > 0)
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            cubeIsOnTheGround = cubeIsOnTheGround-1;
+            cubeIsOnTheGround = cubeIsOnTheGround - 1;
         }
     }
 
@@ -144,7 +151,11 @@ public class scoregame : MonoBehaviour
             other.gameObject.SetActive(false);
             save.PowerUpGet(1);
         }
-
+        else if (other.gameObject.CompareTag("SprintActivate"))
+        {
+            other.gameObject.SetActive(false);
+            save.PowerUpGet(2);
+        }
     }
 
     private void OnTriggerStay(Collider other)

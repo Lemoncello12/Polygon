@@ -13,6 +13,7 @@ TagManager:
   - StorageCube
   - GunActivate
   - JumpActivate
+  - SprintActivate
   layers:
   - Default
   - TransparentFX

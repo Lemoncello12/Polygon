@@ -107,7 +107,7 @@ public class LocalSave : MonoBehaviour
         }
         else if (value >= 12 && sprintLock == false)
         {
-            
+            SceneManager.LoadScene(15);
         }
     }
 }

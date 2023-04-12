@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DreamJump.unity
     guid: bcf7b4882b50eaf418558d1642fb398d
+  - enabled: 1
+    path: Assets/Scenes/DreamSprint.unity
+    guid: 8eb11549f8f508141a5ad7f495a88b53
   m_configObjects: {}
