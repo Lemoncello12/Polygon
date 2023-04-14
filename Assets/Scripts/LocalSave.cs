@@ -13,6 +13,7 @@ public class LocalSave : MonoBehaviour
     public GameObject gun;
     public GameObject jump;
     public GameObject sprint;
+    public GameObject screen;
 
     void Awake()
     {
@@ -62,8 +63,14 @@ public class LocalSave : MonoBehaviour
         {
             Debug.LogError("Power up number is out of bounds");
         }
-        SavePlayer();
 
+        screen.SetActive(true);
+        Invoke("LoadMenu", 5);
+    }
+
+    public void LoadMenu()
+    {
+        SavePlayer();
         SceneManager.LoadScene(0);
     }
 
