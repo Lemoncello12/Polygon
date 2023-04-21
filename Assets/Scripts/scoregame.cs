@@ -49,7 +49,7 @@ public class scoregame : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            if (SceneManager.GetActiveScene().buildIndex < 13)
+            if (SceneManager.GetActiveScene().buildIndex < 13 || SceneManager.GetActiveScene().buildIndex > 15)
             {
                 SceneManager.LoadScene(0);
             }
