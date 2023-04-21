@@ -31,7 +31,10 @@ public class scoregame : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
-        secretGet = save.secrets[SceneManager.GetActiveScene().buildIndex - 1];
+        secretGet = save.secrets[SceneManager.GetActiveScene().buildIndex - 1];    
+    }
+    public void SaveStart()
+    {
         if (save.gunLock == true)
         {
             gun.SetActive(true);
@@ -41,9 +44,7 @@ public class scoregame : MonoBehaviour
             maxJump = 2;
         }
         cubeIsOnTheGround = maxJump;
-
     }
-
     // Update is called once per frame
     void Update()
     {

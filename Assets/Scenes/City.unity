@@ -656,10 +656,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bridge_ToStreet_Simple_Exit
       objectReference: {fileID: 0}
-    - target: {fileID: 100226, guid: cdf53a606bb6b9e41ae628dccce7632f, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     - target: {fileID: 400226, guid: cdf53a606bb6b9e41ae628dccce7632f, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1118,6 +1114,8 @@ MonoBehaviour:
   jump: {fileID: 0}
   sprint: {fileID: 0}
   screen: {fileID: 0}
+  player: {fileID: 0}
+  score: {fileID: 0}
 --- !u!1 &1570091761
 GameObject:
   m_ObjectHideFlags: 0
@@ -1308,21 +1306,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 100036, guid: 618fb2c9500dc8246ad3b5a0cf5e070b, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
-    - target: {fileID: 100038, guid: 618fb2c9500dc8246ad3b5a0cf5e070b, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     - target: {fileID: 100040, guid: 618fb2c9500dc8246ad3b5a0cf5e070b, type: 3}
       propertyPath: m_Name
       value: Bridge_Damage
-      objectReference: {fileID: 0}
-    - target: {fileID: 100040, guid: 618fb2c9500dc8246ad3b5a0cf5e070b, type: 3}
-      propertyPath: m_TagString
-      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 400040, guid: 618fb2c9500dc8246ad3b5a0cf5e070b, type: 3}
       propertyPath: m_RootOrder
@@ -1367,10 +1353,6 @@ PrefabInstance:
     - target: {fileID: 400040, guid: 618fb2c9500dc8246ad3b5a0cf5e070b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400004, guid: 618fb2c9500dc8246ad3b5a0cf5e070b, type: 3}
-      propertyPath: m_Convex
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 618fb2c9500dc8246ad3b5a0cf5e070b, type: 3}

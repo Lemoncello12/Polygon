@@ -14,6 +14,8 @@ public class LocalSave : MonoBehaviour
     public GameObject jump;
     public GameObject sprint;
     public GameObject screen;
+    public GameObject player;
+    public scoregame score;
 
     void Awake()
     {
@@ -88,6 +90,12 @@ public class LocalSave : MonoBehaviour
         gunLock = data.gunLock;
         jumpLock = data.jumpLock;
         sprintLock = data.sprintLock;
+        if (SceneManager.GetActiveScene().buildIndex != 0)
+        {
+            player = GameObject.Find("Player");
+            score = player.GetComponent<scoregame>();
+            score.SaveStart();
+        }
     }
 
     public void ResetPlayer()
