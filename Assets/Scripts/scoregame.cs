@@ -22,7 +22,13 @@ public class scoregame : MonoBehaviour
     public int scoreToWin = 4;
     public LocalSave save;
     public GameObject gun;
+    private int keyGet;
     int sceneNum = 12;
+    public GameObject keyModel;
+    public GameObject blueKey;
+    public GameObject blackKey;
+    public GameObject greenKey;
+    public GameObject redKey;
 
 
 
@@ -31,7 +37,11 @@ public class scoregame : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
-        secretGet = save.secrets[SceneManager.GetActiveScene().buildIndex - 1];    
+        secretGet = save.secrets[SceneManager.GetActiveScene().buildIndex - 1];   
+        Material blueMat = blueKey.GetComponent<MeshRenderer>().material;
+        Material blackMat = blackKey.GetComponent<MeshRenderer>().material;
+        Material greenMat = greenKey.GetComponent<MeshRenderer>().material;
+        Material redMat = redKey.GetComponent<MeshRenderer>().material;
     }
     public void SaveStart()
     {
@@ -59,7 +69,9 @@ public class scoregame : MonoBehaviour
                 Application.Quit();
             }
         }
+
         PlayerMove();
+        KeyUpdate();
 
         if (score >= scoreToWin)
         {
@@ -167,6 +179,64 @@ public class scoregame : MonoBehaviour
             {
                 other.GetComponent<Autodoor>().Moving = true;
             }
+        }
+        else if (keyGet != 0)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                if (other.gameObject.CompareTag("BlueKey"))
+                {
+                    keyGet = 2;
+                }
+                else if (other.gameObject.CompareTag("BlackKey"))
+                {
+                    
+                    keyGet = 1;
+                }
+                else if (other.gameObject.CompareTag("GreenKey"))
+                {
+                    
+                    keyGet = 3;
+                }
+                else if (other.gameObject.CompareTag("RedKey"))
+                {
+                    
+                    keyGet = 4;
+                }
+            }
+            
+        }
+        
+    }
+
+    void KeyUpdate()
+    {
+        if (keyGet != 0)
+        {
+            if (keyModel.ActiveSelf == false)
+            {
+                if (keyGet == 1)
+                {
+                    
+                }
+                else if (keyGet == 2)
+                {
+
+                }
+                else if (keyGet == 3)
+                {
+
+                }
+                else if (keyGet == 4)
+                {
+
+                }
+                keyModel.SetActive(true);
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.E) && keyGet != 0)
+        {
+
         }
     }
 

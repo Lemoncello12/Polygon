@@ -31,9 +31,18 @@ public class Despawn : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         doDamage enemy = other.GetComponent<doDamage>();
+
         if (enemy != null)
         {
             enemy.takeDamage();
+        }
+        else
+        {
+            DoDamageNDropKey enemy2 = other.GetComponent<DoDamageNDropKey>();
+            if (enemy2 != null)
+            {
+                enemy2.takeDamage();
+            }
         }
         gameObject.SetActive(false);
     }
