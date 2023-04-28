@@ -18,6 +18,10 @@ TagManager:
   - BlueKey
   - BlackKey
   - RedKey
+  - GreenLock
+  - BlueLock
+  - BlackLock
+  - RedLock
   layers:
   - Default
   - TransparentFX
