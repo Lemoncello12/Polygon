@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7863301623646972091}
+  - component: {fileID: 2000395931112758185}
+  - component: {fileID: 1331493073442008722}
   m_Layer: 0
   m_Name: prf_key_01
   m_TagString: BlueKey
@@ -32,6 +34,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2000395931112758185
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6586380701880126115}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.28301272, y: 0.5369892, z: 0.07352706}
+  m_Center: {x: 0.0020671985, y: -0.2315054, z: -0.00903831}
+--- !u!114 &1331493073442008722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6586380701880126115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aa46b3f52895cd409f519d33433ae68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xSpinSpeed: 0
+  ySpinSpeed: 3
+  zSpinSpeed: 0
 --- !u!1001 &9040821786520040063
 PrefabInstance:
   m_ObjectHideFlags: 0

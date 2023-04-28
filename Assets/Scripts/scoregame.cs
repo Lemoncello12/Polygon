@@ -233,7 +233,25 @@ public class scoregame : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.E) && keyGet != 0)
         {
-
+            keyModel.SetActive(false);
+            Vector3 KeyPos = new Vector3(transform.position.x,transform.position.y + 2f,transform.position.z + 1f);
+            if (keyGet == 1)
+            {
+                GameObject newKey = Instantiate(blackKey,KeyPos,transform.rotation);
+            }
+            else if (keyGet == 2)
+            {
+                GameObject newKey = Instantiate(blueKey,KeyPos,transform.rotation); 
+            }
+            else if (keyGet == 3)
+            {
+                GameObject newKey = Instantiate(greenKey,KeyPos,transform.rotation);  
+            }
+            else if (keyGet == 4)
+            {
+                GameObject newKey = Instantiate(redKey,KeyPos,transform.rotation);    
+            }
+            keyGet = 0;
         }
     }
 
