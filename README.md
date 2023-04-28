@@ -12,6 +12,10 @@
 
 *Sprint icon by [Primate on Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Yellow_Arrow_Right.png)
 
+*Bullet Sound Effects from [Free Sound Effects Pack by Olivier Girardot](https://assetstore.unity.com/packages/audio/sound-fx/free-sound-effects-pack-155776)
+
+*Key and lock prefabs from [Key and Lock by CG Cell](https://assetstore.unity.com/packages/3d/props/furniture/key-and-lock-193317)
+
 *Other various textures from 3DXO.com
 
 *Music composed with Chrome Music Lab
