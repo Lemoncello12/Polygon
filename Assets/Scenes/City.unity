@@ -1203,6 +1203,19 @@ MonoBehaviour:
   xSpinSpeed: 0
   ySpinSpeed: 5
   zSpinSpeed: 0
+--- !u!65 &1393549501
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393549498}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.28301272, y: 0.5369892, z: 0.07352706}
+  m_Center: {x: 0.0020671985, y: -0.2315054, z: -0.00903831}
 --- !u!1 &1570091761
 GameObject:
   m_ObjectHideFlags: 0
@@ -1382,7 +1395,7 @@ PrefabInstance:
     - target: {fileID: 3874798687770068871, guid: 2d678e3e202b1344d999c6e60927f9ab,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d678e3e202b1344d999c6e60927f9ab, type: 3}
@@ -1455,9 +1468,29 @@ PrefabInstance:
       objectReference: {fileID: 1177646322}
     - target: {fileID: 1109834665330908687, guid: c3fef0fcb432ca54192eb84180eec0df,
         type: 3}
+      propertyPath: redMat
+      value: 
+      objectReference: {fileID: 2100000, guid: 0897acad11ce8c641b71cbec176a86ff, type: 2}
+    - target: {fileID: 1109834665330908687, guid: c3fef0fcb432ca54192eb84180eec0df,
+        type: 3}
+      propertyPath: blueMat
+      value: 
+      objectReference: {fileID: 2100000, guid: bb193f4134dde224aa2718f271e4f1f2, type: 2}
+    - target: {fileID: 1109834665330908687, guid: c3fef0fcb432ca54192eb84180eec0df,
+        type: 3}
       propertyPath: maxJump
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1109834665330908687, guid: c3fef0fcb432ca54192eb84180eec0df,
+        type: 3}
+      propertyPath: blackMat
+      value: 
+      objectReference: {fileID: 2100000, guid: 1f25dcc7d084a614db462285a3464a30, type: 2}
+    - target: {fileID: 1109834665330908687, guid: c3fef0fcb432ca54192eb84180eec0df,
+        type: 3}
+      propertyPath: greenMat
+      value: 
+      objectReference: {fileID: 2100000, guid: 51b681ed880fe6041b75caf92aacecaa, type: 2}
     - target: {fileID: 1109834665330908687, guid: c3fef0fcb432ca54192eb84180eec0df,
         type: 3}
       propertyPath: ScoreText

@@ -22,13 +22,17 @@ public class scoregame : MonoBehaviour
     public int scoreToWin = 4;
     public LocalSave save;
     public GameObject gun;
-    private int keyGet;
+    public int keyGet;
     int sceneNum = 12;
     public GameObject keyModel;
     public GameObject blueKey;
     public GameObject blackKey;
     public GameObject greenKey;
     public GameObject redKey;
+    public Material blackMat;
+    public Material blueMat;
+    public Material greenMat;
+    public Material redMat;
 
 
 
@@ -38,10 +42,6 @@ public class scoregame : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
         secretGet = save.secrets[SceneManager.GetActiveScene().buildIndex - 1];   
-        Material blueMat = blueKey.GetComponent<MeshRenderer>().material;
-        Material blackMat = blackKey.GetComponent<MeshRenderer>().material;
-        Material greenMat = greenKey.GetComponent<MeshRenderer>().material;
-        Material redMat = redKey.GetComponent<MeshRenderer>().material;
     }
     public void SaveStart()
     {
@@ -180,11 +180,9 @@ public class scoregame : MonoBehaviour
                 other.GetComponent<Autodoor>().Moving = true;
             }
         }
-        else if (keyGet != 0)
+        else if (keyGet == 0)
         {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                if (other.gameObject.CompareTag("BlueKey"))
+            if (other.gameObject.CompareTag("BlueKey"))
                 {
                     keyGet = 2;
                 }
@@ -195,7 +193,7 @@ public class scoregame : MonoBehaviour
                 }
                 else if (other.gameObject.CompareTag("GreenKey"))
                 {
-                    
+                    Debug.Log("It worked.");
                     keyGet = 3;
                 }
                 else if (other.gameObject.CompareTag("RedKey"))
@@ -203,8 +201,7 @@ public class scoregame : MonoBehaviour
                     
                     keyGet = 4;
                 }
-            }
-            
+            other.gameObject.SetActive(false);
         }
         
     }
@@ -213,23 +210,23 @@ public class scoregame : MonoBehaviour
     {
         if (keyGet != 0)
         {
-            if (keyModel.ActiveSelf == false)
+            if (keyModel.activeSelf == false)
             {
                 if (keyGet == 1)
                 {
-                    
+                    keyModel.GetComponent<MeshRenderer>().material = blackMat;
                 }
                 else if (keyGet == 2)
                 {
-
+                    keyModel.GetComponent<MeshRenderer>().material = blueMat;
                 }
                 else if (keyGet == 3)
                 {
-
+                    keyModel.GetComponent<MeshRenderer>().material = greenMat;
                 }
                 else if (keyGet == 4)
                 {
-
+                    keyModel.GetComponent<MeshRenderer>().material = redMat;
                 }
                 keyModel.SetActive(true);
             }
