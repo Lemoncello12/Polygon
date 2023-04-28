@@ -169,6 +169,30 @@ public class scoregame : MonoBehaviour
             other.gameObject.SetActive(false);
             save.PowerUpGet(2);
         }
+        else if (other.gameObject.CompareTag("BlackLock") && keyGet == 1)
+        {
+            keyGet = 0;
+            keyModel.SetActive(false);
+            other.gameObject.SetActive(false);
+        }
+        else if (other.gameObject.CompareTag("BlueLock") && keyGet == 2)
+        {
+            keyGet = 0;
+            keyModel.SetActive(false);
+            other.gameObject.SetActive(false);
+        }
+        else if (other.gameObject.CompareTag("GreenLock") && keyGet == 3)
+        {
+            keyGet = 0;
+            keyModel.SetActive(false);
+            other.gameObject.SetActive(false);
+        }
+        else if (other.gameObject.CompareTag("RedLock") && keyGet == 4)
+        {
+            keyGet = 0;
+            keyModel.SetActive(false);
+            other.gameObject.SetActive(false);
+        }
     }
 
     private void OnTriggerStay(Collider other)
