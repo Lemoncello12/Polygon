@@ -209,23 +209,25 @@ public class scoregame : MonoBehaviour
             if (other.gameObject.CompareTag("BlueKey"))
                 {
                     keyGet = 2;
+                    other.gameObject.SetActive(false);
                 }
                 else if (other.gameObject.CompareTag("BlackKey"))
                 {
                     
                     keyGet = 1;
+                    other.gameObject.SetActive(false);
                 }
                 else if (other.gameObject.CompareTag("GreenKey"))
                 {
-                    Debug.Log("It worked.");
                     keyGet = 3;
+                    other.gameObject.SetActive(false);
                 }
                 else if (other.gameObject.CompareTag("RedKey"))
                 {
                     
                     keyGet = 4;
+                    other.gameObject.SetActive(false);
                 }
-            other.gameObject.SetActive(false);
         }
         
     }

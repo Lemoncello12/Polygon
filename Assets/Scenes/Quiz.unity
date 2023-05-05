@@ -1746,7 +1746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a3d334993b2d94fa36fe69737531f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleported: {fileID: 0}
+  teleported: {fileID: 389065061}
 --- !u!65 &1038750816
 BoxCollider:
   m_ObjectHideFlags: 0
