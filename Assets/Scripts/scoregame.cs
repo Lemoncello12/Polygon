@@ -23,7 +23,7 @@ public class scoregame : MonoBehaviour
     public LocalSave save;
     public GameObject gun;
     public int keyGet;
-    int sceneNum = 12;
+    int sceneNum = 17;
     public GameObject keyModel;
     public GameObject blueKey;
     public GameObject blackKey;

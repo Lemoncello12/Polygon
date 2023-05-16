@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class LocalSave : MonoBehaviour
 {
-    public bool[] finished = new bool[12];
-    public bool[] secrets = new bool[12];
+    public bool[] finished = new bool[13];
+    public bool[] secrets = new bool[13];
     public bool gunLock = false;
     public bool jumpLock = false;
     public bool sprintLock = false;
@@ -42,9 +42,16 @@ public class LocalSave : MonoBehaviour
 
     public void LevelComplete(bool secret)
     {
-        finished[SceneManager.GetActiveScene().buildIndex - 1] = true;
-        secrets[SceneManager.GetActiveScene().buildIndex - 1] = secret;
-
+        if (SceneManager.GetActiveScene().buildIndex <= 13)
+        {
+            finished[SceneManager.GetActiveScene().buildIndex - 1] = true;
+            secrets[SceneManager.GetActiveScene().buildIndex - 1] = secret;
+        }
+        else if (SceneManager.GetActiveScene().buildIndex > 13)
+        {
+            finished[SceneManager.GetActiveScene().buildIndex - 4] = true;
+            secrets[SceneManager.GetActiveScene().buildIndex - 4] = secret;
+        }
         SavePlayer();
     }
     public void PowerUpGet(int powerup)
