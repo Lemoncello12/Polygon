@@ -5,16 +5,16 @@ using UnityEngine;
 [System.Serializable]
 public class PlayerData
 {
-    public bool[] finished;
-    public bool[] secrets;
+    public bool[] newfinished;
+    public bool[] newsecrets;
     public bool gunLock = false;
     public bool jumpLock = false;
     public bool sprintLock = false;
 
     public PlayerData (LocalSave save)
     {
-        finished = save.finished;
-        secrets = save.secrets;
+        newfinished = save.newfinished;
+        newsecrets = save.newsecrets;
         gunLock = save.gunLock;
         jumpLock = save.jumpLock;
         sprintLock = save.sprintLock;

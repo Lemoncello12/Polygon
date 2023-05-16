@@ -17,7 +17,7 @@ public class CheckMenuForUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (script.finished[sceneNum - 1])
+        if (script.newfinished[sceneNum - 1])
         {
             button1.SetActive(true);
         }
@@ -26,7 +26,7 @@ public class CheckMenuForUI : MonoBehaviour
             button1.SetActive(false);
         }
 
-        if (script.secrets[sceneNum - 1])
+        if (script.newsecrets[sceneNum - 1])
         {
             button2.SetActive(true);
         }

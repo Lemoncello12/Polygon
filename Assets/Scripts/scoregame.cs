@@ -41,7 +41,15 @@ public class scoregame : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
-        secretGet = save.secrets[SceneManager.GetActiveScene().buildIndex - 1];   
+        
+        if (SceneManager.GetActiveScene().buildIndex <= 13)
+        {
+            secretGet = save.newsecrets[SceneManager.GetActiveScene().buildIndex - 1];
+        }
+        else if (SceneManager.GetActiveScene().buildIndex > 13)
+        {
+            secretGet = save.newsecrets[SceneManager.GetActiveScene().buildIndex - 4];
+        }
     }
     public void SaveStart()
     {
@@ -118,7 +126,7 @@ public class scoregame : MonoBehaviour
         //Vector3 movePlayer = transform.position;
         //movePlayer.x = movePlayer.x + leftRight * speed * 10 * Time.deltaTime;
         //movePlayer.z = movePlayer.z + forwardBack * speed * 10 * Time.deltaTime;
-        if (save.sprintLock)
+        if (save.sprintLock == true)
         {
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {

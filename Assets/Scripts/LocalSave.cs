@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class LocalSave : MonoBehaviour
 {
-    public bool[] finished = new bool[13];
-    public bool[] secrets = new bool[13];
+    public bool[] newfinished = new bool[50];
+    public bool[] newsecrets = new bool[50];
     public bool gunLock = false;
     public bool jumpLock = false;
     public bool sprintLock = false;
@@ -44,13 +44,13 @@ public class LocalSave : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().buildIndex <= 13)
         {
-            finished[SceneManager.GetActiveScene().buildIndex - 1] = true;
-            secrets[SceneManager.GetActiveScene().buildIndex - 1] = secret;
+            newfinished[SceneManager.GetActiveScene().buildIndex - 1] = true;
+            newsecrets[SceneManager.GetActiveScene().buildIndex - 1] = secret;
         }
         else if (SceneManager.GetActiveScene().buildIndex > 13)
         {
-            finished[SceneManager.GetActiveScene().buildIndex - 4] = true;
-            secrets[SceneManager.GetActiveScene().buildIndex - 4] = secret;
+            newfinished[SceneManager.GetActiveScene().buildIndex - 4] = true;
+            newsecrets[SceneManager.GetActiveScene().buildIndex - 4] = secret;
         }
         SavePlayer();
     }
@@ -92,8 +92,8 @@ public class LocalSave : MonoBehaviour
     {
         PlayerData data = SaveSystem.LoadPlayer();
 
-        finished = data.finished;
-        secrets = data.secrets;
+        newfinished = data.newfinished;
+        newsecrets = data.newsecrets;
         gunLock = data.gunLock;
         jumpLock = data.jumpLock;
         sprintLock = data.sprintLock;
@@ -115,9 +115,9 @@ public class LocalSave : MonoBehaviour
     {
        int value = 0;
  
-       for(int i = 0; i < secrets.Length; i++) 
+       for(int i = 0; i < newsecrets.Length; i++) 
        {
-            if(secrets[i] == true) value++;
+            if(newsecrets[i] == true) value++;
        }
         if (value >= 4 && gunLock == false)
         {
