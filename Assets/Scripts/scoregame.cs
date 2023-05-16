@@ -23,7 +23,7 @@ public class scoregame : MonoBehaviour
     public LocalSave save;
     public GameObject gun;
     public int keyGet;
-    int sceneNum = 17;
+    int sceneNum = 16;
     public GameObject keyModel;
     public GameObject blueKey;
     public GameObject blackKey;
@@ -95,7 +95,15 @@ public class scoregame : MonoBehaviour
         } 
         else
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            if (SceneManager.GetActiveScene().buildIndex != 12)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+            else
+            {
+                SceneManager.LoadScene(16);
+            }
+            
         }
         
 
