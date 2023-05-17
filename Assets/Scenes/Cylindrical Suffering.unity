@@ -97,8 +97,10 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 413330d836617f248b4d8e0e0a475f1e,
+    type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: eb4821517d1a346479daf5c4974ffe9f,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -187,6 +189,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &18768517
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -395,6 +400,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &98801200
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -680,6 +688,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &126793305
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1001,6 +1012,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &182018914
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1097,6 +1111,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 100
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &252911373
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1208,6 +1225,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 100
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &261359405
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1319,6 +1339,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &310425928
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1556,6 +1579,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &329892550
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1966,6 +1992,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 100
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &362563208
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2306,6 +2335,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 100
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &440426257
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2432,6 +2464,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &497631814
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2625,6 +2660,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 100
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &508955914
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2767,6 +2805,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &513553354
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2878,6 +2919,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &540256667
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3023,6 +3067,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &658768629
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3425,6 +3472,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &806271404
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3536,6 +3586,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &821417013
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3647,6 +3700,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &867620868
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3893,6 +3949,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &927870538
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4105,6 +4164,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 100
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1017156985
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4673,6 +4735,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 100
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1073623707
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4850,6 +4915,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1135444838
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5044,6 +5112,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1153783931
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5155,6 +5226,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 100
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1167722232
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5363,6 +5437,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 100
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1251717066
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5586,6 +5663,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1277496260
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5905,6 +5985,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1396019508
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6113,6 +6196,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1407306588
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6224,6 +6310,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1423598908
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6335,6 +6424,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1430166726
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6446,6 +6538,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1443183847
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6729,6 +6824,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1558827688
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7293,9 +7391,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f92f12c021297a041a430b9d84ddb8c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finished: 000000000000000000000000
-  secrets: 000000000000000000000000
-  oopsAllFalse: 000000000000000000000000
+  newfinished: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  newsecrets: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  gunLock: 0
+  jumpLock: 0
+  sprintLock: 0
+  gun: {fileID: 0}
+  jump: {fileID: 0}
+  sprint: {fileID: 0}
+  screen: {fileID: 0}
+  player: {fileID: 0}
+  score: {fileID: 0}
 --- !u!1 &1745184433
 GameObject:
   m_ObjectHideFlags: 0
@@ -7539,6 +7645,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1775135768
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7650,6 +7759,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1775860888
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7761,6 +7873,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1803555396
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7872,6 +7987,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 100
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1830563769
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8290,6 +8408,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 100
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &1993034448
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8700,6 +8821,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!65 &2044898108
 BoxCollider:
   m_ObjectHideFlags: 0

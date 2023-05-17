@@ -97,8 +97,10 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 2ce1c00a04f7df54e8f3fec6e1c07732,
+    type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: eb4821517d1a346479daf5c4974ffe9f,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2622,10 +2624,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f92f12c021297a041a430b9d84ddb8c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finished: 000000000000000000000000
-  secrets: 000000000000000000000000
-  sprintLock: 0
+  newfinished: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  newsecrets: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   gunLock: 0
+  jumpLock: 0
+  sprintLock: 0
+  gun: {fileID: 0}
+  jump: {fileID: 0}
+  sprint: {fileID: 0}
+  screen: {fileID: 0}
+  player: {fileID: 0}
+  score: {fileID: 0}
 --- !u!1 &1281073945
 GameObject:
   m_ObjectHideFlags: 0
