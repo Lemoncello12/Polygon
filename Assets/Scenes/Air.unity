@@ -482,7 +482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04e22447b22cc614c9c309090da7d722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4.5
+  speed: 3
   contact: 0
   limit: 400
 --- !u!1001 &828579758
@@ -1135,6 +1135,11 @@ PrefabInstance:
       propertyPath: ScoreText
       value: 
       objectReference: {fileID: 849977610}
+    - target: {fileID: 1109834665330908687, guid: c3fef0fcb432ca54192eb84180eec0df,
+        type: 3}
+      propertyPath: scoreToWin
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 1109834665330909172, guid: c3fef0fcb432ca54192eb84180eec0df,
         type: 3}
       propertyPath: Manager

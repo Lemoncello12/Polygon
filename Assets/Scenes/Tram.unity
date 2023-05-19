@@ -1108,6 +1108,7 @@ GameObject:
   - component: {fileID: 364749764}
   - component: {fileID: 364749763}
   - component: {fileID: 364749762}
+  - component: {fileID: 364749767}
   m_Layer: 0
   m_Name: Cube (58)
   m_TagString: Untagged
@@ -1208,6 +1209,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 64
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &364749767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364749761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcce362b8b4e96843935effb3a89d8df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 25
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!1 &367490826
 GameObject:
   m_ObjectHideFlags: 0
@@ -1716,18 +1733,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 716351611}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &522133017 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1109834665330909172, guid: c3fef0fcb432ca54192eb84180eec0df,
-    type: 3}
-  m_PrefabInstance: {fileID: 716351611}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 522133016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcd077fada58cc842b895cd19a8ad993, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &522133018 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1109834665330908680, guid: c3fef0fcb432ca54192eb84180eec0df,
@@ -3612,6 +3617,7 @@ GameObject:
   - component: {fileID: 1220342070}
   - component: {fileID: 1220342069}
   - component: {fileID: 1220342068}
+  - component: {fileID: 1220342073}
   m_Layer: 0
   m_Name: Cube (57)
   m_TagString: Untagged
@@ -3712,6 +3718,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 63
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1220342073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220342067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcce362b8b4e96843935effb3a89d8df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 25
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!1 &1257263262
 GameObject:
   m_ObjectHideFlags: 0
@@ -4925,7 +4947,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.5
-  health: {fileID: 522133017}
   contact: 0
   limit: 400
 --- !u!1 &1585373804
@@ -5788,6 +5809,7 @@ GameObject:
   - component: {fileID: 1761535519}
   - component: {fileID: 1761535518}
   - component: {fileID: 1761535517}
+  - component: {fileID: 1761535522}
   m_Layer: 0
   m_Name: Cube (56)
   m_TagString: Untagged
@@ -5888,6 +5910,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 62
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1761535522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761535516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcce362b8b4e96843935effb3a89d8df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 25
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
 --- !u!1 &1785653617
 GameObject:
   m_ObjectHideFlags: 0
@@ -7333,6 +7371,7 @@ GameObject:
   - component: {fileID: 2091199551}
   - component: {fileID: 2091199550}
   - component: {fileID: 2091199549}
+  - component: {fileID: 2091199554}
   m_Layer: 0
   m_Name: Cube (55)
   m_TagString: Untagged
@@ -7433,3 +7472,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 61
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &2091199554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091199548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcce362b8b4e96843935effb3a89d8df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 25
+  hpMax: 10
+  damageRecieved: 10
+  currentHP: 0
