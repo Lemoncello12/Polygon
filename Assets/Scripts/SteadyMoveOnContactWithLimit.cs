@@ -5,15 +5,13 @@ using UnityEngine;
 public class SteadyMoveOnContactWithLimit : MonoBehaviour
 {
     public float speed = 5f;
-    public HealthScript health;
-    private Vector3 place;
     public bool contact = false;
     public float limit = 0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        place = transform.position;
+        
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -34,13 +32,6 @@ public class SteadyMoveOnContactWithLimit : MonoBehaviour
             {
                 transform.Translate(speed * Time.deltaTime, 0, 0);
             }
-        }
-
-
-        if (health.alive == false)
-        {
-            contact = false;
-            transform.position = place;
         }
     }
 }
