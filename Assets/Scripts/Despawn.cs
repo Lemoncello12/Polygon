@@ -43,6 +43,14 @@ public class Despawn : MonoBehaviour
             {
                 enemy2.takeDamage();
             }
+            else
+            {
+                OnShotRust platform = other.GetComponent<OnShotRust>();
+                if (platform != null)
+                {
+                    platform.RustNow();
+                }
+            }
         }
         gameObject.SetActive(false);
     }
