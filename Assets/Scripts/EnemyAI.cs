@@ -43,19 +43,45 @@ public class EnemyAI : MonoBehaviour
     private void Patroling()
     {
         if (!walkPointSet) SearchWalkPoint();
+
+        if (walkPointSet)
+            agent.SetDestination(walkPoint);
+
+        Vector3 distToWalkPoint = transform.position -walkPoint;
+
+        if(distToWalkPoint.magnitude < 1f)
+            walkPointSet = false;
     }
     private void SearchWalkPoint()
     {
-        //Stopped at 2:19
+        float randomX = Random.Range(-walkPointRange, walkPointRange);
+        float randomZ = Random.Range(-walkPointRange, walkPointRange);
+
+        walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
+        if (Physics.Raycast(walkPoint, -transform.up, 2f, whatGround))
+            walkPointSet = true;
     }
 
     private void ChasePlayer()
     {
-
+        agent.SetDestination(player.position);
     }
 
     private void AttackPlayer()
     {
+        agent.SetDestination(transform.position);
+        transform.LookAt(player);
 
+        if(!attacked)
+        {
+            //Put attack code here
+            attacked = true;
+            Invoke(nameof(ResetAttack), timeBetweenAttacks);
+        }
+    }
+
+    private void ResetAttack()
+    {
+        attacked = false;
     }
 }
