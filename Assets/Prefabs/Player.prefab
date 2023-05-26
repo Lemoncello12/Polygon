@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1109834663632699393}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 1109834664086178123}
   - component: {fileID: 1109834664086178122}
   - component: {fileID: 1109834664086178120}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 1109834664099943260}
   - component: {fileID: 1109834664099943250}
   - component: {fileID: 1109834664099943261}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 1109834664193149423}
   - component: {fileID: 1109834664193149421}
   - component: {fileID: 1109834664193149420}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -287,7 +287,7 @@ GameObject:
   - component: {fileID: 1109834664391241209}
   - component: {fileID: 1109834664391241215}
   - component: {fileID: 1109834664391241214}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -364,7 +364,7 @@ GameObject:
   - component: {fileID: 1109834665097288972}
   - component: {fileID: 1109834665097288975}
   - component: {fileID: 1109834665097288974}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -472,7 +472,7 @@ GameObject:
   - component: {fileID: 1109834665330909172}
   - component: {fileID: 1282076775983340557}
   - component: {fileID: 6419064766280239933}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -598,6 +598,7 @@ MonoBehaviour:
   scoreToWin: 4
   save: {fileID: 0}
   gun: {fileID: 2601992796692123648}
+  keyGet: 0
   keyModel: {fileID: 4439396035485089234}
   blueKey: {fileID: 6586380701880126115, guid: 9295189b4f03b8a47b9873a8492069d1, type: 3}
   blackKey: {fileID: 3874798687770068871, guid: 974c90fb5c85e1145b28c692035ab2f2,
@@ -605,6 +606,10 @@ MonoBehaviour:
   greenKey: {fileID: 3874798687770068871, guid: 2d678e3e202b1344d999c6e60927f9ab,
     type: 3}
   redKey: {fileID: 3874798687770068871, guid: a1648482d42851340b0961f999414488, type: 3}
+  blackMat: {fileID: 0}
+  blueMat: {fileID: 0}
+  greenMat: {fileID: 0}
+  redMat: {fileID: 0}
 --- !u!114 &1109834665330909172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -741,7 +746,7 @@ GameObject:
   - component: {fileID: 3705279331792074774}
   - component: {fileID: 8979429822501883504}
   - component: {fileID: 6235227360401658323}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -837,7 +842,7 @@ GameObject:
   - component: {fileID: 3949717900309161832}
   - component: {fileID: 108064494187636941}
   - component: {fileID: 2781847278241061895}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: sm_key_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

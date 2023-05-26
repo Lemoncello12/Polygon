@@ -18,6 +18,7 @@ public class EnemyAI : MonoBehaviour
 
     public float sightR, attackR;
     public bool playerInSightR, playerInAttackR;
+    public GameObject bullet;
     // Start is called before the first frame update
     void Awake()
     {
@@ -74,7 +75,8 @@ public class EnemyAI : MonoBehaviour
 
         if(!attacked)
         {
-            //Put attack code here
+            GameObject clone;
+            clone = Instantiate(bullet, transform.position, transform.rotation);
             attacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
