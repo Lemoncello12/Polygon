@@ -232,9 +232,9 @@ GameObject:
   - component: {fileID: 161085595}
   - component: {fileID: 161085594}
   - component: {fileID: 161085593}
-  - component: {fileID: 161085592}
   - component: {fileID: 161085591}
   - component: {fileID: 161085590}
+  - component: {fileID: 161085597}
   m_Layer: 0
   m_Name: Melee (4)
   m_TagString: Untagged
@@ -292,22 +292,6 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &161085592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 161085589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcce362b8b4e96843935effb3a89d8df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Damage: 100
-  hpMax: 50
-  damageRecieved: 10
-  currentHP: 0
 --- !u!65 &161085593
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -379,13 +363,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 161085589}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.43, y: -11.05, z: -7.96}
+  m_LocalPosition: {x: -5.19, y: -11.05, z: -9.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &161085597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161085589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfed380ee5b68af47a27d0739c3b2f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 100
+  hpMax: 50
+  damageRecieved: 10
+  currentHP: 0
 --- !u!1 &169018080
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,9 +641,9 @@ GameObject:
   - component: {fileID: 405136235}
   - component: {fileID: 405136234}
   - component: {fileID: 405136233}
-  - component: {fileID: 405136232}
   - component: {fileID: 405136231}
   - component: {fileID: 405136230}
+  - component: {fileID: 405136237}
   m_Layer: 0
   m_Name: Melee (3)
   m_TagString: Untagged
@@ -701,22 +701,6 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &405136232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 405136229}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcce362b8b4e96843935effb3a89d8df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Damage: 100
-  hpMax: 50
-  damageRecieved: 10
-  currentHP: 0
 --- !u!65 &405136233
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -794,6 +778,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &405136237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405136229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfed380ee5b68af47a27d0739c3b2f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 100
+  hpMax: 50
+  damageRecieved: 10
+  currentHP: 0
+--- !u!1 &422954186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 422954187}
+  m_Layer: 0
+  m_Name: WaveManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &422954187
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422954186}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 39.411026, y: 24.300434, z: -53.472015}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &534935849
 GameObject:
@@ -1180,7 +1211,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 822ae945f05f2c6408bfd00e8ab2e186, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 36a5689cc9ff5d74dadc1e1d0f0432b1, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1301,9 +1332,9 @@ GameObject:
   - component: {fileID: 1180707616}
   - component: {fileID: 1180707615}
   - component: {fileID: 1180707614}
-  - component: {fileID: 1180707613}
   - component: {fileID: 1180707612}
   - component: {fileID: 1180707611}
+  - component: {fileID: 1180707618}
   m_Layer: 0
   m_Name: Melee (2)
   m_TagString: Untagged
@@ -1361,22 +1392,6 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &1180707613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1180707610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcce362b8b4e96843935effb3a89d8df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Damage: 100
-  hpMax: 50
-  damageRecieved: 10
-  currentHP: 0
 --- !u!65 &1180707614
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1448,13 +1463,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1180707610}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.79, y: -11.05, z: -6.12}
+  m_LocalPosition: {x: -1.61, y: -11.05, z: -9.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1180707618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180707610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfed380ee5b68af47a27d0739c3b2f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 100
+  hpMax: 50
+  damageRecieved: 10
+  currentHP: 0
 --- !u!1 &1395522599 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1109834665330909175, guid: c3fef0fcb432ca54192eb84180eec0df,
@@ -1473,9 +1504,9 @@ GameObject:
   - component: {fileID: 1555388158}
   - component: {fileID: 1555388157}
   - component: {fileID: 1555388156}
-  - component: {fileID: 1555388155}
   - component: {fileID: 1555388154}
   - component: {fileID: 1555388153}
+  - component: {fileID: 1555388160}
   m_Layer: 0
   m_Name: Ranged
   m_TagString: Untagged
@@ -1533,22 +1564,6 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &1555388155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1555388152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcce362b8b4e96843935effb3a89d8df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Damage: 100
-  hpMax: 70
-  damageRecieved: 10
-  currentHP: 0
 --- !u!136 &1555388156
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1621,13 +1636,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555388152}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -10.9, z: 0}
+  m_LocalPosition: {x: -12.56, y: -10.9, z: -4.78}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1555388160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555388152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfed380ee5b68af47a27d0739c3b2f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 100
+  hpMax: 70
+  damageRecieved: 10
+  currentHP: 0
 --- !u!1 &1570091761
 GameObject:
   m_ObjectHideFlags: 0
@@ -1734,9 +1765,9 @@ GameObject:
   - component: {fileID: 1728828668}
   - component: {fileID: 1728828667}
   - component: {fileID: 1728828666}
-  - component: {fileID: 1728828665}
   - component: {fileID: 1728828664}
   - component: {fileID: 1728828663}
+  - component: {fileID: 1728828670}
   m_Layer: 0
   m_Name: Ranged (1)
   m_TagString: Untagged
@@ -1794,22 +1825,6 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &1728828665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1728828662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcce362b8b4e96843935effb3a89d8df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Damage: 100
-  hpMax: 70
-  damageRecieved: 10
-  currentHP: 0
 --- !u!136 &1728828666
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1882,13 +1897,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728828662}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.12, y: -10.9, z: -4.43}
+  m_LocalPosition: {x: 5.14, y: -10.9, z: -2.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1728828670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728828662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfed380ee5b68af47a27d0739c3b2f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 100
+  hpMax: 70
+  damageRecieved: 10
+  currentHP: 0
 --- !u!1 &1901514384
 GameObject:
   m_ObjectHideFlags: 0
@@ -1901,9 +1932,9 @@ GameObject:
   - component: {fileID: 1901514388}
   - component: {fileID: 1901514387}
   - component: {fileID: 1901514386}
-  - component: {fileID: 1901514385}
   - component: {fileID: 1901514390}
   - component: {fileID: 1901514391}
+  - component: {fileID: 1901514392}
   m_Layer: 0
   m_Name: Melee
   m_TagString: Untagged
@@ -1911,22 +1942,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1901514385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1901514384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcce362b8b4e96843935effb3a89d8df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Damage: 100
-  hpMax: 50
-  damageRecieved: 10
-  currentHP: 0
 --- !u!65 &1901514386
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1998,7 +2013,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1901514384}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.79, y: -11.05, z: -3.0197685}
+  m_LocalPosition: {x: -0.87, y: -11.05, z: -6.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2055,6 +2070,22 @@ MonoBehaviour:
   playerInSightR: 0
   playerInAttackR: 0
   bullet: {fileID: 0}
+--- !u!114 &1901514392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901514384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfed380ee5b68af47a27d0739c3b2f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 100
+  hpMax: 50
+  damageRecieved: 10
+  currentHP: 0
 --- !u!1001 &2021382007
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2127,6 +2158,11 @@ PrefabInstance:
       propertyPath: ScoreText
       value: 
       objectReference: {fileID: 849977610}
+    - target: {fileID: 1109834665330908687, guid: c3fef0fcb432ca54192eb84180eec0df,
+        type: 3}
+      propertyPath: scoreToWin
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1109834665330909172, guid: c3fef0fcb432ca54192eb84180eec0df,
         type: 3}
       propertyPath: Manager
@@ -2389,9 +2425,9 @@ GameObject:
   - component: {fileID: 2134141955}
   - component: {fileID: 2134141954}
   - component: {fileID: 2134141953}
-  - component: {fileID: 2134141952}
   - component: {fileID: 2134141951}
   - component: {fileID: 2134141950}
+  - component: {fileID: 2134141957}
   m_Layer: 0
   m_Name: Melee (1)
   m_TagString: Untagged
@@ -2449,22 +2485,6 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &2134141952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2134141949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcce362b8b4e96843935effb3a89d8df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Damage: 100
-  hpMax: 50
-  damageRecieved: 10
-  currentHP: 0
 --- !u!65 &2134141953
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2536,10 +2556,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2134141949}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.33, y: -11.05, z: -2.77}
+  m_LocalPosition: {x: -3.87, y: -11.05, z: -6.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2134141957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134141949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfed380ee5b68af47a27d0739c3b2f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 100
+  hpMax: 50
+  damageRecieved: 10
+  currentHP: 0

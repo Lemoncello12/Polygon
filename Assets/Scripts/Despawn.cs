@@ -38,7 +38,7 @@ public class Despawn : MonoBehaviour
         }
         else
         {
-            DoDamageNDropKey enemy2 = other.GetComponent<DoDamageNDropKey>();
+            DoDamageAddScore enemy2 = other.GetComponent<DoDamageAddScore>();
             if (enemy2 != null)
             {
                 enemy2.takeDamage();

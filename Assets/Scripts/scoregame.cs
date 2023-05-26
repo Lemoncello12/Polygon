@@ -298,7 +298,7 @@ public class scoregame : MonoBehaviour
     }
 
 
-    void AddScore()
+    public void AddScore()
     {
         score++;
         ScoreText.text = score.ToString();
