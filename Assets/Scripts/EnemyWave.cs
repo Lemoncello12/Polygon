@@ -15,12 +15,16 @@ public class EnemyWave : MonoBehaviour
     public int lock5 = 42;
     public int bossLock = 59;
     private scoregame scoreGet;
+    private GameObject player;
+    private Vector3 place;
     private int score;
 
     // Start is called before the first frame update
     void Start()
     {
-        scoreGet = GameObject.Find("Player").GetComponent<scoregame>();
+        player = GameObject.Find("Player");
+        scoreGet = player.GetComponent<scoregame>();
+        place = player.transform.position;
     }
 
     // Update is called once per frame
@@ -30,23 +34,27 @@ public class EnemyWave : MonoBehaviour
         if (score == lock2)
         {
             wave2.SetActive(true);
-
+            player.transform.position = place;
         }
         if (score == lock3)
         {
             wave3.SetActive(true);
+            player.transform.position = place;
         }
         if (score == lock4)
         {
             wave4.SetActive(true);
+            player.transform.position = place;
         }
         if (score == lock5)
         {
             wave5.SetActive(true);
+            player.transform.position = place;
         }
         if (score == bossLock)
         {
             leafo.SetActive(true);
+            player.transform.position = place;
         }
     }
 }
