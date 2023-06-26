@@ -70,23 +70,11 @@ public class EnemyWave : MonoBehaviour
             player.transform.position = place;
             tpTrue = 7;
         }
-        if (score == lock8 && tpTrue != 8)
-        {
-            wave8.SetActive(true);
-            player.transform.position = place;
-            tpTrue = 8;
-        }
-        if (score == lock9 && tpTrue != 9)
-        {
-            wave9.SetActive(true);
-            player.transform.position = place;
-            tpTrue = 9;
-        }
-        if (score == bossLock && tpTrue != 10)
+        if (score == bossLock && tpTrue != 8)
         {
             leafo.SetActive(true);
             player.transform.position = place;
-            tpTrue = 10;
+            tpTrue = 8;
         }
     }
 }
