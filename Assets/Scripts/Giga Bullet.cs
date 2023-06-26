@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = System.Random;
 
 public class GigaBullet : MonoBehaviour
 {
@@ -8,11 +10,13 @@ public class GigaBullet : MonoBehaviour
     private AudioSource audio;
     private float timeRemaining;
     public float damage = 50f;
+    Random rnd = Random();
     // Start is called before the first frame update
     void Start()
     {
         timeRemaining = timerLength;
         audio = GetComponent<AudioSource>();
+        //transform.Rotate(rnd.Next(-2.5, 2.5) * Time.deltaTime, rnd.Next(-2.5, 2.5) * Time.deltaTime, rnd.Next(-2.5, 2.5) * Time.deltaTime);
     }
 
     // Update is called once per frame
