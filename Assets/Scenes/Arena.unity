@@ -338,7 +338,7 @@ Transform:
   - {fileID: 948388548}
   - {fileID: 133041866}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &125315574
 GameObject:
@@ -1691,7 +1691,7 @@ Transform:
   - {fileID: 1681804479}
   - {fileID: 1863242431}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &248370686
 GameObject:
@@ -1775,7 +1775,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &248370691
 MeshCollider:
@@ -3317,7 +3317,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &422954188
 MonoBehaviour:
@@ -3339,7 +3339,7 @@ MonoBehaviour:
   wave7: {fileID: 65667270}
   wave8: {fileID: 0}
   wave9: {fileID: 0}
-  leafo: {fileID: 0}
+  leafo: {fileID: 882984166}
   lock2: 7
   lock3: 17
   lock4: 29
@@ -4498,7 +4498,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &605309628
 Transform:
   m_ObjectHideFlags: 0
@@ -4519,7 +4519,7 @@ Transform:
   - {fileID: 405136236}
   - {fileID: 161085596}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &614165559
 GameObject:
@@ -5893,7 +5893,7 @@ Transform:
   - {fileID: 700337981}
   - {fileID: 258693619}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &882984166
 GameObject:
@@ -5916,7 +5916,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &882984167
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5993,7 +5993,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 84.115, z: 0}
 --- !u!114 &882984171
 MonoBehaviour:
@@ -6036,8 +6036,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 100
-  hpMax: 100
-  damageRecieved: 1
+  hpMax: 750
+  damageRecieved: 10
   currentHP: 0
 --- !u!195 &882984173
 NavMeshAgent:
@@ -6049,8 +6049,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 30
-  m_Acceleration: 8
+  m_Speed: 50
+  m_Acceleration: 50
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0
@@ -6607,7 +6607,7 @@ Transform:
   - {fileID: 390167870}
   - {fileID: 1280248996}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &901748861
 GameObject:
@@ -10151,7 +10151,7 @@ Transform:
   - {fileID: 1089286240}
   - {fileID: 2123455930}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1280041017
 GameObject:
@@ -12957,7 +12957,7 @@ Transform:
   - {fileID: 1068210443}
   - {fileID: 1126546814}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1675973150
 GameObject:
