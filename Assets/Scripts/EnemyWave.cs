@@ -58,6 +58,12 @@ public class EnemyWave : MonoBehaviour
             player.transform.position = place;
             tpTrue = 4;
         }
+        if (score == lock5 && tpTrue != 5)
+        {
+            wave5.SetActive(true);
+            player.transform.position = place;
+            tpTrue = 5;
+        }
         if (score == lock6 && tpTrue != 6)
         {
             wave6.SetActive(true);
